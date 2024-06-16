@@ -8,7 +8,7 @@ data:
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 2 \"data-structure/Fenwick_Tree.hpp\"\n#include<bit>\n#include<functional>\n\
+  bundledCode: "#line 2 \"data-structure/Fenwick_Tree.hpp\"\n#include<functional>\n\
     #include<stdio.h>\n#include<vector>\n\nusing namespace std;\n\ntemplate<class\
     \ S,auto op,auto op_inv,auto e>\nstruct Fenwick_Tree{\n\tstatic_assert(std::is_convertible_v<decltype(op),\
     \ std::function<S(S, S)>>,\"op must work as S(S, S)\");\n\tstatic_assert(std::is_convertible_v<decltype(op_inv),\
@@ -28,7 +28,7 @@ data:
     \ (*comp)(S,S)){\n\t\tint k=31-__builtin_clz(siz);\n\t\tk=1<<k;\n\t\tint ans=0;\n\
     \t\tfor(;k>0;k/=2){\n\t\t\tif(ans+k<=siz && comp(dat[ans+k-1],x)){\n\t\t\t\tx=op_inv(x,dat[ans+k-1]);\n\
     \t\t\t\tans+=k;\n\t\t\t}\n\t\t}\n\t\treturn ans;\n\t}\n};\n"
-  code: "#pragma once\n#include<bit>\n#include<functional>\n#include<stdio.h>\n#include<vector>\n\
+  code: "#pragma once\n#include<functional>\n#include<stdio.h>\n#include<vector>\n\
     \nusing namespace std;\n\ntemplate<class S,auto op,auto op_inv,auto e>\nstruct\
     \ Fenwick_Tree{\n\tstatic_assert(std::is_convertible_v<decltype(op), std::function<S(S,\
     \ S)>>,\"op must work as S(S, S)\");\n\tstatic_assert(std::is_convertible_v<decltype(op_inv),\
@@ -52,7 +52,7 @@ data:
   isVerificationFile: false
   path: data-structure/Fenwick_Tree.hpp
   requiredBy: []
-  timestamp: '2024-06-16 23:53:51+09:00'
+  timestamp: '2024-06-17 00:03:05+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: data-structure/Fenwick_Tree.hpp
