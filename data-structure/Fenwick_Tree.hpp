@@ -56,7 +56,8 @@ struct Fenwick_Tree{
 		add(k,op_sub(x,y));
 	}
 	int lower_bound(S x,bool (*comp)(S,S)){
-		int k=(int)(bit_floor((unsigned int)(siz)));
+		int k=31-__builtin_clz(siz);
+		k=1<<k;
 		int ans=0;
 		for(;k>0;k/=2){
 			if(ans+k<=siz && comp(dat[ans+k-1],x)){
