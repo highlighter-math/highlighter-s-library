@@ -1,6 +1,11 @@
 ---
 data:
-  libraryCategories: []
+  libraryCategories:
+  - name: data-structure
+    pages:
+    - icon: ':warning:'
+      path: data-structure/Fenwick_Tree.cpp
+      title: data-structure/Fenwick_Tree.cpp
   verificationCategories:
   - name: .
     pages:
