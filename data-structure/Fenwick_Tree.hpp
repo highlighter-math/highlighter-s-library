@@ -3,6 +3,7 @@
 #include<functional>
 #include<stdio.h>
 #include<vector>
+
 using namespace std;
 
 template<class S,auto op,auto op_inv,auto e>
@@ -47,6 +48,9 @@ struct Fenwick_Tree{
 	}
 	S prod(int l,int r){
 		return op_inv(prod(r),prod(l));
+	}
+	S get(int p){
+		return prod(p,p+1);
 	}
 	void update(int k,S x){
 		S y=prod(k,k+1);
