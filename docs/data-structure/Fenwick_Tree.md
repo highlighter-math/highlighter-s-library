@@ -11,3 +11,12 @@ documentation_of: ../../data-structure/Fenwick_Tree.hpp
 - 交換律: $a \cdot b = b \cdot a$ for all $a, b \in S$
 
 を満たす代数構造に対し使用できるデータ構造です．
+
+長さ $N$ の $S$ の配列に対し，
+
+- 要素の $1$ 点変更
+- 区間の要素の総積の取得
+
+を $O(\log N)$ で行うことが出来ます．
+
+また，このライブラリはオラクルとして<code>op</code
