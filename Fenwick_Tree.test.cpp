@@ -1,4 +1,3 @@
-#line 1 "verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp"
 #define PROBLEM "https://judge.yosupo.jp/problem/point_add_range_sum"
 #include<bit>
 #include<functional>
@@ -68,7 +67,6 @@ struct Fenwick_Tree{
 		return ans;
 	}
 };
-#line 3 "verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp"
 
 long long op(long long a,long long b){
 	return a+b;
