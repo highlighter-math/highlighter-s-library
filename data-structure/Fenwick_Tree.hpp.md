@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: verify/verify-yosupo-datastructure/Fenwick_Tree.test.cpp
+    title: verify/verify-yosupo-datastructure/Fenwick_Tree.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"data-structure/Fenwick_Tree.hpp\"\n#include<functional>\n\
@@ -53,8 +56,9 @@ data:
   path: data-structure/Fenwick_Tree.hpp
   requiredBy: []
   timestamp: '2024-06-17 00:03:05+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - verify/verify-yosupo-datastructure/Fenwick_Tree.test.cpp
 documentation_of: data-structure/Fenwick_Tree.hpp
 layout: document
 title: Fenwick Tree
