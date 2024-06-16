@@ -1,8 +1,5 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/point_add_range_sum"
-#include<functional>
-#include<stdio.h>
-#include<vector>
-
+#include "../../data-structure/Fenwick_Tree.hpp"
 using namespace std;
 
 template<class S,auto op,auto op_inv,auto e>
