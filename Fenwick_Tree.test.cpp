@@ -1,5 +1,5 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/point_add_range_sum"
-#include "../../data-structure/Fenwick_Tree.hpp"
+#include "Fenwick_Tree.hpp"
 using namespace std;
 
 long long op(long long a,long long b){
