@@ -9,7 +9,7 @@ data:
   verificationCategories:
   - name: .
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Fenwick_Tree.test.cpp
       title: Fenwick_Tree.test.cpp
     - icon: ':heavy_check_mark:'
