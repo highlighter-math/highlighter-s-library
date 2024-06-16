@@ -5,7 +5,7 @@ data:
     pages:
     - icon: ':warning:'
       path: data-structure/Fenwick_Tree.hpp
-      title: data-structure/Fenwick_Tree.hpp
+      title: Fenwick Tree
   verificationCategories:
   - name: .
     pages:
