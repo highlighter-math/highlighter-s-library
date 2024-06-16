@@ -14,7 +14,7 @@ data:
     PROBLEM: https://judge.yosupo.jp/problem/point_add_range_sum
     links:
     - https://judge.yosupo.jp/problem/point_add_range_sum
-  bundledCode: "#line 1 \"verify/verify-yosupo-datastructure/Fenwick_Tree.test.cpp\"\
+  bundledCode: "#line 1 \"verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp\"\
     \n#define PROBLEM \"https://judge.yosupo.jp/problem/point_add_range_sum\"\n#line\
     \ 2 \"data-structure/Fenwick_Tree.hpp\"\n#include<functional>\n#include<stdio.h>\n\
     #include<vector>\n\nusing namespace std;\n\ntemplate<class S,auto op,auto op_inv,auto\
@@ -35,7 +35,7 @@ data:
     \t\tS y=prod(k,k+1);\n\t\tadd(k,op_sub(x,y));\n\t}\n\tint lower_bound(S x,bool\
     \ (*comp)(S,S)){\n\t\tint k=31-__builtin_clz(siz);\n\t\tk=1<<k;\n\t\tint ans=0;\n\
     \t\tfor(;k>0;k/=2){\n\t\t\tif(ans+k<=siz && comp(dat[ans+k-1],x)){\n\t\t\t\tx=op_inv(x,dat[ans+k-1]);\n\
-    \t\t\t\tans+=k;\n\t\t\t}\n\t\t}\n\t\treturn ans;\n\t}\n};\n#line 3 \"verify/verify-yosupo-datastructure/Fenwick_Tree.test.cpp\"\
+    \t\t\t\tans+=k;\n\t\t\t}\n\t\t}\n\t\treturn ans;\n\t}\n};\n#line 3 \"verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp\"\
     \nusing namespace std;\n\nlong long op(long long a,long long b){\n\treturn a+b;\n\
     }\n\nlong long op_inv(long long a,long long b){\n\treturn a-b;\n}\n\nlong long\
     \ e(){\n\treturn 0LL;\n}\n\nbool comp(long long a,long long b){\n\treturn a<b;\n\
@@ -59,15 +59,15 @@ data:
   dependsOn:
   - data-structure/Fenwick_Tree.hpp
   isVerificationFile: true
-  path: verify/verify-yosupo-datastructure/Fenwick_Tree.test.cpp
+  path: verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp
   requiredBy: []
-  timestamp: '2024-06-17 00:05:54+09:00'
+  timestamp: '2024-06-17 08:20:50+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: verify/verify-yosupo-datastructure/Fenwick_Tree.test.cpp
+documentation_of: verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp
 layout: document
 redirect_from:
-- /verify/verify/verify-yosupo-datastructure/Fenwick_Tree.test.cpp
-- /verify/verify/verify-yosupo-datastructure/Fenwick_Tree.test.cpp.html
-title: verify/verify-yosupo-datastructure/Fenwick_Tree.test.cpp
+- /verify/verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp
+- /verify/verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp.html
+title: verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp
 ---

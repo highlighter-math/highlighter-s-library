@@ -20,7 +20,7 @@ data:
   - name: verify/verify-yosupo-datastructure
     pages:
     - icon: ':heavy_check_mark:'
-      path: verify/verify-yosupo-datastructure/Fenwick_Tree.test.cpp
-      title: verify/verify-yosupo-datastructure/Fenwick_Tree.test.cpp
+      path: verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp
+      title: verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp
 layout: toppage
 ---
