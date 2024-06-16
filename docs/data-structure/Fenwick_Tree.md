@@ -19,4 +19,4 @@ documentation_of: ../../data-structure/Fenwick_Tree.hpp
 
 を $O(\log N)$ で行うことが出来ます．
 
-また，このライブラリはオラクルとして<code>op</code
+また，このライブラリはオラクルとして<code>op</code>
