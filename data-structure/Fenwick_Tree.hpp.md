@@ -64,7 +64,7 @@ layout: document
 title: Fenwick Tree
 ---
 
-# 概要
+## 概要
 [アーベル群](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%BC%E3%83%99%E3%83%AB%E7%BE%A4) $(S, \cdot ~ \colon S \times S \to S,e \in S)$ ，つまり
 
 - 結合律: $(a \cdot b) \cdot c = a \cdot (b \cdot c)$ for all $a,b,c \in S$
@@ -83,7 +83,7 @@ title: Fenwick Tree
 
 また，このライブラリはオラクルとして `op,op_inv,e` の $3$ 種類を使用するが，これらが定数時間で動くものと仮定したときの計算量を記述する．オラクル内部の計算量が $O(f(n))$ である場合はすべての計算量が $O(f(n))$ 倍となる．
 
-# コンストラクタ
+## コンストラクタ
 ```cpp
 (1) Fenwick_Tree<S, op, op_inv, e> fw(int n)
 (2) Fenwick_Tree<S, op, op_inv, e> fw(vector<S> v)
@@ -116,10 +116,10 @@ Fenwick_Tree<int, op, op_inv, e> fw(10);
 - (1): 長さ `n` で初期値がすべて `e()` であるような数列 `a` を作る．
 - (2): 長さ `n=v.size()` の数列 `a` を作る．`v` の内容が初期値となる．
 
-## 計算量
+### 計算量
 - $O(n)$
 
-# update
+## update
 
 ```cpp
 void fw.update(int p, S x)
@@ -127,10 +127,10 @@ void fw.update(int p, S x)
 
 `a[p]` に `x` を代入する．
 
-## 計算量
+### 計算量
 - $O(\log n)$
 
-# add
+## add
 
 ```cpp
 void fw.add(int p,S x)
@@ -138,10 +138,10 @@ void fw.add(int p,S x)
 
 `a[p]` に `op(a[p],x)` を代入する．
 
-## 計算量
+### 計算量
 - $O(\log n)$
 
-# get
+## get
 
 ```cpp
 S fw.get(int p)
@@ -149,10 +149,10 @@ S fw.get(int p)
 
 `a[p]` を返す．
 
-## 計算量
+### 計算量
 - $O(\log n)$
 
-# prod
+## prod
 
 ```cpp
 (1) S fw.prod(int r)
@@ -162,10 +162,10 @@ S fw.get(int p)
 - (1): `op(a[0],a[1], ... , a[r-1])` を計算する．
 - (2): `op(a[l],a[l+1], ... , a[r-1])` を計算する．
 
-## 計算量
+### 計算量
 - $O(log n)$
 
-# lower_bound
+## lower_bound
 
 ```cpp
 int fw.lower_bound(S x, bool comp)
@@ -175,5 +175,5 @@ int fw.lower_bound(S x, bool comp)
 
 `comp(x,op(a[0],a[1], ..., a[r-1]))=true` となる最小の `r` を返す．
 
-## 計算量
+### 計算量
 - $O(log n)$
