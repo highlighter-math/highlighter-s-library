@@ -1,9 +1,5 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_2_B"
-#include<bit>
-#include<functional>
-#include<stdio.h>
-#include<vector>
-
+#include<bits/stdc++.h>
 using namespace std;
 
 template<class S,auto op,auto op_inv,auto e>
@@ -56,7 +52,10 @@ struct Fenwick_Tree{
 		add(k,op_sub(x,y));
 	}
 	int lower_bound(S x,bool (*comp)(S,S)){
-		int k=(int)(bit_floor((unsigned int)(siz)));
+		int k=1;
+		while(k*2<=siz){
+			k*=2;
+		}
 		int ans=0;
 		for(;k>0;k/=2){
 			if(ans+k<=siz && comp(dat[ans+k-1],x)){
