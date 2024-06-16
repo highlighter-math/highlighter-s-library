@@ -1,4 +1,4 @@
-#define PROBLEM "https://judge.yosupo.jp/problem/point_add_range_sum"
+#define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_2_B"
 #include<bit>
 #include<functional>
 #include<stdio.h>
@@ -88,11 +88,7 @@ bool comp(long long a,long long b){
 int main(){
 	int N,Q;
 	scanf("%d%d",&N,&Q);
-	vector<long long> A(N);
-	for(int i=0;i<N;i++){
-		scanf("%lld",&A[i]);
-	}
-	Fenwick_Tree<long long,op,op_inv,e> fw(A);
+	Fenwick_Tree<long long,op,op_inv,e> fw(N);
 	for(;Q--;){
 		int c;
 		scanf("%d",&c);
@@ -100,11 +96,12 @@ int main(){
 			int p;
 			long long x;
 			scanf("%d%lld",&p,&x);
+			p--;
 			fw.add(p,x);
 			continue;
 		}
 		int l,r;
 		scanf("%d%d",&l,&r);
-		printf("%lld\n",fw.prod(l,r));
+		printf("%lld\n",fw.prod(l-1,r));
 	}
 }
