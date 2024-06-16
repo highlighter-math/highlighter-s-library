@@ -1,5 +1,10 @@
-#define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_2_B"
-#include<bits/stdc++.h>
+#line 1 "verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp"
+#define PROBLEM "https://judge.yosupo.jp/problem/point_add_range_sum"
+#include<bit>
+#include<functional>
+#include<stdio.h>
+#include<vector>
+
 using namespace std;
 
 template<class S,auto op,auto op_inv,auto e>
@@ -52,10 +57,7 @@ struct Fenwick_Tree{
 		add(k,op_sub(x,y));
 	}
 	int lower_bound(S x,bool (*comp)(S,S)){
-		int k=1;
-		while(k*2<=siz){
-			k*=2;
-		}
+		int k=(int)(bit_floor((unsigned int)(siz)));
 		int ans=0;
 		for(;k>0;k/=2){
 			if(ans+k<=siz && comp(dat[ans+k-1],x)){
@@ -87,7 +89,11 @@ bool comp(long long a,long long b){
 int main(){
 	int N,Q;
 	scanf("%d%d",&N,&Q);
-	Fenwick_Tree<long long,op,op_inv,e> fw(N);
+	vector<long long> A(N);
+	for(int i=0;i<N;i++){
+		scanf("%lld",&A[i]);
+	}
+	Fenwick_Tree<long long,op,op_inv,e> fw(A);
 	for(;Q--;){
 		int c;
 		scanf("%d",&c);
@@ -95,12 +101,11 @@ int main(){
 			int p;
 			long long x;
 			scanf("%d%lld",&p,&x);
-			p--;
 			fw.add(p,x);
 			continue;
 		}
 		int l,r;
 		scanf("%d%d",&l,&r);
-		printf("%lld\n",fw.prod(l-1,r));
+		printf("%lld\n",fw.prod(l,r));
 	}
 }
