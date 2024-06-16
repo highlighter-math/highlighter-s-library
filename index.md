@@ -4,8 +4,8 @@ data:
   - name: data-structure
     pages:
     - icon: ':warning:'
-      path: data-structure/Fenwick_Tree.cpp
-      title: data-structure/Fenwick_Tree.cpp
+      path: data-structure/Fenwick_Tree.hpp
+      title: data-structure/Fenwick_Tree.hpp
   verificationCategories:
   - name: .
     pages:

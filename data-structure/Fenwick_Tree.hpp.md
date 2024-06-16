@@ -4,11 +4,11 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 2 \"data-structure/Fenwick_Tree.cpp\"\n#include<bit>\n#include<functional>\n\
+  bundledCode: "#line 2 \"data-structure/Fenwick_Tree.hpp\"\n#include<bit>\n#include<functional>\n\
     #include<stdio.h>\n#include<vector>\nusing namespace std;\n\ntemplate<class S,auto\
     \ op,auto op_inv,auto e>\nstruct Fenwick_Tree{\n\tstatic_assert(std::is_convertible_v<decltype(op),\
     \ std::function<S(S, S)>>,\"op must work as S(S, S)\");\n\tstatic_assert(std::is_convertible_v<decltype(op_inv),\
@@ -54,15 +54,15 @@ data:
     \ ans;\n\t}\n};\n"
   dependsOn: []
   isVerificationFile: false
-  path: data-structure/Fenwick_Tree.cpp
+  path: data-structure/Fenwick_Tree.hpp
   requiredBy: []
-  timestamp: '2024-06-16 20:12:12+09:00'
+  timestamp: '2024-06-16 21:49:54+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: data-structure/Fenwick_Tree.cpp
+documentation_of: data-structure/Fenwick_Tree.hpp
 layout: document
 redirect_from:
-- /library/data-structure/Fenwick_Tree.cpp
-- /library/data-structure/Fenwick_Tree.cpp.html
-title: data-structure/Fenwick_Tree.cpp
+- /library/data-structure/Fenwick_Tree.hpp
+- /library/data-structure/Fenwick_Tree.hpp.html
+title: data-structure/Fenwick_Tree.hpp
 ---
