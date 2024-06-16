@@ -85,8 +85,8 @@ title: Fenwick Tree
 
 # コンストラクタ
 ```cpp
-(1) Fenwick_Tree<S, op, e> fw(int n)
-(2) Fenwick_Tree<S, op, e> fw(vector<S> v)
+(1) Fenwick_Tree<S, op, op_inv, e> fw(int n)
+(2) Fenwick_Tree<S, op, op_inv, e> fw(vector<S> v)
 ```
  - 型 `S`
  - 二項演算 `S op(S a, S b)`
@@ -100,11 +100,15 @@ int op(int a, int b) {
   return a+b;
 }
 
+int op_inv(int a, int b) {
+ return a-b;
+}
+
 int e() {
   return 0;
 }
 
-Fenwick_Tree<int, op, e> fw(10);
+Fenwick_Tree<int, op, op_inv, e> fw(10);
 ```
 
 のようになる．
