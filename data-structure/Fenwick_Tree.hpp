@@ -33,7 +33,6 @@ struct Fenwick_Tree{
 		}
 	}
 	S prod(int k){
-		//op(A[0],A[1],...,A[k-1])
 		if(k<=0){
 			return e();
 		}
@@ -57,8 +56,6 @@ struct Fenwick_Tree{
 		add(k,op_sub(x,y));
 	}
 	int lower_bound(S x,bool (*comp)(S,S)){
-		//comp(op(A[0],A[1],...,A[k-1]),x)がtrueになる最大のk
-		//true,true,true,...,true,false,false,...falseでないといけない
 		int k=(int)(bit_floor((unsigned int)(siz)));
 		int ans=0;
 		for(;k>0;k/=2){
