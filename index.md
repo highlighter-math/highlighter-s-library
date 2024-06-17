@@ -12,11 +12,6 @@ data:
       path: matrix/matrix.hpp
       title: matrix/matrix.hpp
   verificationCategories:
-  - name: .
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: example.test.cpp
-      title: example.test.cpp
   - name: verify/verify-yosupo-datastructure
     pages:
     - icon: ':heavy_check_mark:'
