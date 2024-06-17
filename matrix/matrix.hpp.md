@@ -6,6 +6,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: verify/verify-yosupo-matrix/matrix_product.test.cpp
     title: verify/verify-yosupo-matrix/matrix_product.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: verify/verify-yosupo-matrix/pow_of_matrix.test.cpp
+    title: verify/verify-yosupo-matrix/pow_of_matrix.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -51,6 +54,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - verify/verify-yosupo-matrix/matrix_product.test.cpp
+  - verify/verify-yosupo-matrix/pow_of_matrix.test.cpp
 documentation_of: matrix/matrix.hpp
 layout: document
 redirect_from:
