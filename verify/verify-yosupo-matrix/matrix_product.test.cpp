@@ -3,6 +3,7 @@
 #include<iostream>
 #include<atcoder/modint>
 using namespace atcoder;
+using mint=modint998244353;
 
 int main(){
 	int N,M,K;
