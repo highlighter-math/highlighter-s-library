@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: verify/verify-yosupo-matrix/matrix_product.test.cpp
+    title: verify/verify-yosupo-matrix/matrix_product.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"matrix/matrix.hpp\"\n#include<vector>\n#include<cassert>\n\
@@ -45,8 +48,9 @@ data:
   path: matrix/matrix.hpp
   requiredBy: []
   timestamp: '2024-06-17 08:20:18+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - verify/verify-yosupo-matrix/matrix_product.test.cpp
 documentation_of: matrix/matrix.hpp
 layout: document
 redirect_from:

@@ -8,7 +8,7 @@ data:
       title: Fenwick Tree
   - name: matrix
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: matrix/matrix.hpp
       title: matrix/matrix.hpp
   verificationCategories:
@@ -24,7 +24,7 @@ data:
       title: verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp
   - name: verify/verify-yosupo-matrix
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: verify/verify-yosupo-matrix/matrix_product.test.cpp
       title: verify/verify-yosupo-matrix/matrix_product.test.cpp
 layout: toppage
