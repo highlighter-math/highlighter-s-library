@@ -29,28 +29,28 @@ data:
     \t\t\tfor(int k=0;k<W;k++){\n\t\t\t\tfor(int j=0;j<w;j++){\n\t\t\t\t\tresult.table[i][j]+=table[i][k]*other.table[k][j];\n\
     \t\t\t\t}\n\t\t\t}\n\t\t}\n\t\t*this=result;\n\t\treturn *this;\n\t}\n};\n#line\
     \ 3 \"verify/verify-yosupo-matrix/matrix_product.test.cpp\"\n#include<iostream>\n\
-    #include<atcoder/modint>\nusing namespace atcoder;\n\nint main(){\n\tint N,M,K;\n\
+    #include<atcoder/modint>\nusing namespace atcoder;\nusing mint=modint998244353;\n\
+    \nint main(){\n\tint N,M,K;\n\tscanf(\"%d%d%d\",&N,&M,&K);\n\tmatrix<mint> A(N,M);\n\
+    \tmatrix<mint> B(M,K);\n\tfor(int i=0;i<N;i++){\n\t\tfor(int j=0;j<M;j++){\n\t\
+    \t\tint a;\n\t\t\tscanf(\"%d\",&a);\n\t\t\tA[i][j]=a;\n\t\t}\n\t}\n\tfor(int i=0;i<M;i++){\n\
+    \t\tfor(int j=0;j<K;j++){\n\t\t\tint b;\n\t\t\tscanf(\"%d\",&b);\n\t\t\tB[i][j]=b;\n\
+    \t\t}\n\t}\n\tA*=B;\n\tfor(int i=0;i<A.H;i++){\n\t\tfor(int j=0;j<A.W;j++){\n\t\
+    \t\tprintf(\"%d \",A[i][j].val());\n\t\t}\n\t\tprintf(\"\\n\");\n\t}\n}\n"
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/matrix_product\"\n#include\
+    \ \"../../matrix/matrix.hpp\"\n#include<iostream>\n#include<atcoder/modint>\n\
+    using namespace atcoder;\nusing mint=modint998244353;\n\nint main(){\n\tint N,M,K;\n\
     \tscanf(\"%d%d%d\",&N,&M,&K);\n\tmatrix<mint> A(N,M);\n\tmatrix<mint> B(M,K);\n\
     \tfor(int i=0;i<N;i++){\n\t\tfor(int j=0;j<M;j++){\n\t\t\tint a;\n\t\t\tscanf(\"\
     %d\",&a);\n\t\t\tA[i][j]=a;\n\t\t}\n\t}\n\tfor(int i=0;i<M;i++){\n\t\tfor(int\
     \ j=0;j<K;j++){\n\t\t\tint b;\n\t\t\tscanf(\"%d\",&b);\n\t\t\tB[i][j]=b;\n\t\t\
     }\n\t}\n\tA*=B;\n\tfor(int i=0;i<A.H;i++){\n\t\tfor(int j=0;j<A.W;j++){\n\t\t\t\
     printf(\"%d \",A[i][j].val());\n\t\t}\n\t\tprintf(\"\\n\");\n\t}\n}\n"
-  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/matrix_product\"\n#include\
-    \ \"../../matrix/matrix.hpp\"\n#include<iostream>\n#include<atcoder/modint>\n\
-    using namespace atcoder;\n\nint main(){\n\tint N,M,K;\n\tscanf(\"%d%d%d\",&N,&M,&K);\n\
-    \tmatrix<mint> A(N,M);\n\tmatrix<mint> B(M,K);\n\tfor(int i=0;i<N;i++){\n\t\t\
-    for(int j=0;j<M;j++){\n\t\t\tint a;\n\t\t\tscanf(\"%d\",&a);\n\t\t\tA[i][j]=a;\n\
-    \t\t}\n\t}\n\tfor(int i=0;i<M;i++){\n\t\tfor(int j=0;j<K;j++){\n\t\t\tint b;\n\
-    \t\t\tscanf(\"%d\",&b);\n\t\t\tB[i][j]=b;\n\t\t}\n\t}\n\tA*=B;\n\tfor(int i=0;i<A.H;i++){\n\
-    \t\tfor(int j=0;j<A.W;j++){\n\t\t\tprintf(\"%d \",A[i][j].val());\n\t\t}\n\t\t\
-    printf(\"\\n\");\n\t}\n}\n"
   dependsOn:
   - matrix/matrix.hpp
   isVerificationFile: true
   path: verify/verify-yosupo-matrix/matrix_product.test.cpp
   requiredBy: []
-  timestamp: '2024-06-17 08:27:03+09:00'
+  timestamp: '2024-06-17 09:42:57+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: verify/verify-yosupo-matrix/matrix_product.test.cpp
