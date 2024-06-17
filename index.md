@@ -8,7 +8,7 @@ data:
       title: Fenwick Tree
   - name: matrix
     pages:
-    - icon: ':x:'
+    - icon: ':warning:'
       path: matrix/matrix.hpp
       title: matrix/matrix.hpp
   verificationCategories:
