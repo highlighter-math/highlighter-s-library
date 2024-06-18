@@ -15,7 +15,7 @@ data:
     links:
     - https://judge.yosupo.jp/problem/matrix_product
   bundledCode: "#line 1 \"verify/verify-yosupo-matrix/matrix_product.test.cpp\"\n\
-    #define PROBLEM \"https://judge.yosupo.jp/problem/matrix_product\"\n#line 1 \"\
+    #define PROBLEM \"https://judge.yosupo.jp/problem/matrix_product\"\n#line 2 \"\
     matrix/matrix.hpp\"\n#include<vector>\n#include<cassert>\nusing namespace std;\n\
     \ntemplate<typename T>\nstruct matrix{\n\tint H,W;\n\tvector<vector<T>> table;\n\
     \tmatrix(int h,int w) : H(h),W(w){\n\t\ttable.resize(h,vector<T>(w));\n\t}\n\t\
@@ -54,7 +54,7 @@ data:
   isVerificationFile: true
   path: verify/verify-yosupo-matrix/matrix_product.test.cpp
   requiredBy: []
-  timestamp: '2024-06-17 14:27:10+09:00'
+  timestamp: '2024-06-18 19:14:09+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: verify/verify-yosupo-matrix/matrix_product.test.cpp

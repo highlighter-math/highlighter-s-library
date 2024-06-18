@@ -12,11 +12,11 @@ data:
       path: matrix/matrix.hpp
       title: matrix/matrix.hpp
   verificationCategories:
-  - name: verify
+  - name: verify/verify-aoj-ntl
     pages:
     - icon: ':heavy_check_mark:'
-      path: verify/verify-aoj-ntl.test.cpp
-      title: verify/verify-aoj-ntl.test.cpp
+      path: verify/verify-aoj-ntl/ntl_1_b.test.cpp
+      title: verify/verify-aoj-ntl/ntl_1_b.test.cpp
   - name: verify/verify-yosupo-datastructure
     pages:
     - icon: ':heavy_check_mark:'
