@@ -6,6 +6,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: data-structure/Fenwick_Tree.hpp
       title: Fenwick Tree
+  - name: math
+    pages:
+    - icon: ':warning:'
+      path: math/power.hpp
+      title: math/power.hpp
   - name: matrix
     pages:
     - icon: ':heavy_check_mark:'
