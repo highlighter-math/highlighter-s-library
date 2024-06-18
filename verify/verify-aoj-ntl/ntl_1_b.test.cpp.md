@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: math/power.hpp
     title: math/power.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/problems/NTL_1_B
@@ -22,22 +22,22 @@ data:
     \ std::function<S()>>,\"e must work as S()\");\n    S mul=a;\n    S ans=e();\n\
     \    while(b){\n        if(b&1){\n        \tans=op(ans,mul);\n        }\n    \
     \    b>>=1;\n        mul=op(mul,mul);\n    }\n    return ans;\n}\n#line 4 \"verify/verify-aoj-ntl/ntl_1_b.test.cpp\"\
-    \n\nlong long p;\nlong long op(long long a,long long b){\n\treturn a%p*b%p;\n\
-    }\n\nlong long e(){\n\treturn 1LL;\n}\n\nint main(){\n\tlong long a,b;\n\tscanf(\"\
-    %lld%lld\",&a,&b);\n\tp=1000000007LL;\n\tprintf(\"%lld\\n\",power<long long,op,e>(a,b));\n\
+    \n\nlong long p=1000000007LL;\n\nlong long op(long long a,long long b){\n\treturn\
+    \ a%p*b%p;\n}\n\nlong long e(){\n\treturn 1LL;\n}\n\nint main(){\n\tlong long\
+    \ a,b;\n\tscanf(\"%lld%lld\",&a,&b);\n\tprintf(\"%lld\\n\",power<long long>(a,b,op,e));\n\
     }\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/NTL_1_B\"\n#include<stdio.h>\n\
-    #include \"../../math/power.hpp\"\n\nlong long p;\nlong long op(long long a,long\
-    \ long b){\n\treturn a%p*b%p;\n}\n\nlong long e(){\n\treturn 1LL;\n}\n\nint main(){\n\
-    \tlong long a,b;\n\tscanf(\"%lld%lld\",&a,&b);\n\tp=1000000007LL;\n\tprintf(\"\
-    %lld\\n\",power<long long,op,e>(a,b));\n}\n"
+    #include \"../../math/power.hpp\"\n\nlong long p=1000000007LL;\n\nlong long op(long\
+    \ long a,long long b){\n\treturn a%p*b%p;\n}\n\nlong long e(){\n\treturn 1LL;\n\
+    }\n\nint main(){\n\tlong long a,b;\n\tscanf(\"%lld%lld\",&a,&b);\n\tprintf(\"\
+    %lld\\n\",power<long long>(a,b,op,e));\n}\n"
   dependsOn:
   - math/power.hpp
   isVerificationFile: true
   path: verify/verify-aoj-ntl/ntl_1_b.test.cpp
   requiredBy: []
-  timestamp: '2024-06-18 23:24:20+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2024-06-18 23:25:26+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: verify/verify-aoj-ntl/ntl_1_b.test.cpp
 layout: document
