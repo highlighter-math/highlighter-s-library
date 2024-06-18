@@ -11,7 +11,7 @@ data:
     - icon: ':warning:'
       path: math/mod_sqrt.hpp
       title: math/mod_sqrt.hpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: math/power.hpp
       title: math/power.hpp
   - name: matrix
@@ -30,6 +30,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp
       title: verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp
+  - name: verify/verify-yosupo-math
+    pages:
+    - icon: ':x:'
+      path: verify/verify-yosupo-math/sqrt_mod.test.cpp
+      title: verify/verify-yosupo-math/sqrt_mod.test.cpp
   - name: verify/verify-yosupo-matrix
     pages:
     - icon: ':heavy_check_mark:'
