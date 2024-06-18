@@ -8,6 +8,9 @@ data:
       title: Fenwick Tree
   - name: math
     pages:
+    - icon: ':warning:'
+      path: math/mod_sqrt.hpp
+      title: math/mod_sqrt.hpp
     - icon: ':heavy_check_mark:'
       path: math/power.hpp
       title: math/power.hpp
