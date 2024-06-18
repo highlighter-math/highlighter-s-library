@@ -6,12 +6,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: verify/verify-aoj-ntl/ntl_1_b.test.cpp
     title: verify/verify-aoj-ntl/ntl_1_b.test.cpp
-  - icon: ':x:'
-    path: verify/verify-yosupo-math/sqrt_mod.test.cpp
-    title: verify/verify-yosupo-math/sqrt_mod.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"math/power.hpp\"\n#include<functional>\n\ntemplate<class\
@@ -31,9 +28,8 @@ data:
   path: math/power.hpp
   requiredBy: []
   timestamp: '2024-06-18 23:43:22+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - verify/verify-yosupo-math/sqrt_mod.test.cpp
   - verify/verify-aoj-ntl/ntl_1_b.test.cpp
 documentation_of: math/power.hpp
 layout: document
