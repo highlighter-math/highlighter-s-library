@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<utility>
-#include "../../math/power.hpp"
+#include "power.hpp"
 
 long long mod_sqrt(long long &Y,long long &p){
     if(p==2 || Y==0){
