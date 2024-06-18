@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: verify/verify-aoj-ntl/ntl_1_b.test.cpp
+    title: verify/verify-aoj-ntl/ntl_1_b.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"math/power.hpp\"\n#include<functional>\n\ntemplate<class\
@@ -25,8 +28,9 @@ data:
   path: math/power.hpp
   requiredBy: []
   timestamp: '2024-06-18 19:22:36+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - verify/verify-aoj-ntl/ntl_1_b.test.cpp
 documentation_of: math/power.hpp
 layout: document
 redirect_from:

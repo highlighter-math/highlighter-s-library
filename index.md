@@ -8,7 +8,7 @@ data:
       title: Fenwick Tree
   - name: math
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: math/power.hpp
       title: math/power.hpp
   - name: matrix
