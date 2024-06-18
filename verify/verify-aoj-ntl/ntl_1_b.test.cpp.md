@@ -17,7 +17,7 @@ data:
   bundledCode: "#line 1 \"verify/verify-aoj-ntl/ntl_1_b.test.cpp\"\n#define PROBLEM\
     \ \"https://onlinejudge.u-aizu.ac.jp/problems/NTL_1_B\"\n#include<stdio.h>\n#line\
     \ 2 \"math/power.hpp\"\n#include<functional>\n\ntemplate<class S>\nS power(S a,long\
-    \ long b,auto op,auto e){\n\tstatic_assert(std::is_convertible_v<decltype(op),\
+    \ long b,auto &op,auto &e){\n\tstatic_assert(std::is_convertible_v<decltype(op),\
     \ std::function<S(S, S)>>,\"op must work as S(S, S)\");\n\tstatic_assert(std::is_convertible_v<decltype(e),\
     \ std::function<S()>>,\"e must work as S()\");\n    S mul=a;\n    S ans=e();\n\
     \    while(b){\n        if(b&1){\n        \tans=op(ans,mul);\n        }\n    \
@@ -36,7 +36,7 @@ data:
   isVerificationFile: true
   path: verify/verify-aoj-ntl/ntl_1_b.test.cpp
   requiredBy: []
-  timestamp: '2024-06-18 23:40:37+09:00'
+  timestamp: '2024-06-18 23:43:22+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: verify/verify-aoj-ntl/ntl_1_b.test.cpp
