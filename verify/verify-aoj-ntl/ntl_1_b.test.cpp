@@ -2,7 +2,8 @@
 #include<stdio.h>
 #include "../../math/power.hpp"
 
-long long p;
+long long p=1000000007LL;
+
 long long op(long long a,long long b){
 	return a%p*b%p;
 }
@@ -14,6 +15,5 @@ long long e(){
 int main(){
 	long long a,b;
 	scanf("%lld%lld",&a,&b);
-	p=1000000007LL;
-	printf("%lld\n",power<long long,op,e>(a,b));
+	printf("%lld\n",power<long long>(a,b,op,e));
 }
