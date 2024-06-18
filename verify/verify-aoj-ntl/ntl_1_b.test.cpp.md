@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: math/power.hpp
     title: math/power.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/problems/NTL_1_B
@@ -16,8 +16,8 @@ data:
     - https://onlinejudge.u-aizu.ac.jp/problems/NTL_1_B
   bundledCode: "#line 1 \"verify/verify-aoj-ntl/ntl_1_b.test.cpp\"\n#define PROBLEM\
     \ \"https://onlinejudge.u-aizu.ac.jp/problems/NTL_1_B\"\n#include<stdio.h>\n#line\
-    \ 2 \"math/power.hpp\"\n#include<functional>\n\ntemplate<class S,auto op,auto\
-    \ e>\nS power(S a,long long b){\n\tstatic_assert(std::is_convertible_v<decltype(op),\
+    \ 2 \"math/power.hpp\"\n#include<functional>\n\ntemplate<class S>\nS power(S a,long\
+    \ long b,S (*op)(S,S),S (*e)()){\n\tstatic_assert(std::is_convertible_v<decltype(op),\
     \ std::function<S(S, S)>>,\"op must work as S(S, S)\");\n\tstatic_assert(std::is_convertible_v<decltype(e),\
     \ std::function<S()>>,\"e must work as S()\");\n    S mul=a;\n    S ans=e();\n\
     \    while(b){\n        if(b&1){\n        \tans=op(ans,mul);\n        }\n    \
@@ -36,8 +36,8 @@ data:
   isVerificationFile: true
   path: verify/verify-aoj-ntl/ntl_1_b.test.cpp
   requiredBy: []
-  timestamp: '2024-06-18 19:24:08+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2024-06-18 23:24:20+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: verify/verify-aoj-ntl/ntl_1_b.test.cpp
 layout: document

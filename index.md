@@ -8,7 +8,7 @@ data:
       title: Fenwick Tree
   - name: math
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: math/power.hpp
       title: math/power.hpp
   - name: matrix
@@ -19,7 +19,7 @@ data:
   verificationCategories:
   - name: verify/verify-aoj-ntl
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: verify/verify-aoj-ntl/ntl_1_b.test.cpp
       title: verify/verify-aoj-ntl/ntl_1_b.test.cpp
   - name: verify/verify-yosupo-datastructure
