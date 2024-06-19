@@ -37,8 +37,8 @@ data:
   timestamp: '2024-06-18 23:43:22+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - verify/verify-yosupo-math/sqrt_mod.test.cpp
   - verify/verify-aoj-ntl/ntl_1_b.test.cpp
+  - verify/verify-yosupo-math/sqrt_mod.test.cpp
 documentation_of: math/power.hpp
 layout: document
 title: power
