@@ -6,7 +6,7 @@ data:
     title: math/mod_sqrt.hpp
   - icon: ':heavy_check_mark:'
     path: math/power.hpp
-    title: math/power.hpp
+    title: power
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false

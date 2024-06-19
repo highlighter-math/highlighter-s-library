@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: math/power.hpp
-    title: math/power.hpp
+    title: power
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false

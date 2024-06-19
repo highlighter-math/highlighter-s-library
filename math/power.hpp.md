@@ -41,8 +41,7 @@ data:
   - verify/verify-aoj-ntl/ntl_1_b.test.cpp
 documentation_of: math/power.hpp
 layout: document
-redirect_from:
-- /library/math/power.hpp
-- /library/math/power.hpp.html
-title: math/power.hpp
+title: power
 ---
+
+## 概要
