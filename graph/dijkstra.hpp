@@ -27,5 +27,10 @@ vector<T> dijkstra(vector<vector<pair<int,T>>> G,int v){
 			}
 		}
 	}
+	for(int i=0;i<N;i++){
+		if(cur[i]==2000000000000LL){
+			cur[i]=-1;
+		}
+	}
 	return cur;
 }
