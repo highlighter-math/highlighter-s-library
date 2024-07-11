@@ -8,7 +8,7 @@ data:
       title: Fenwick Tree
   - name: graph
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: graph/dijkstra.hpp
       title: graph/dijkstra.hpp
   - name: math
@@ -28,6 +28,11 @@ data:
       path: matrix/matrix.hpp
       title: matrix/matrix.hpp
   verificationCategories:
+  - name: verify/verify-aoj-grl
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: verify/verify-aoj-grl/grl_1_a.test.cpp
+      title: verify/verify-aoj-grl/grl_1_a.test.cpp
   - name: verify/verify-aoj-ntl
     pages:
     - icon: ':heavy_check_mark:'
