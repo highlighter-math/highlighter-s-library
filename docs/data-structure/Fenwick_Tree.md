@@ -102,7 +102,7 @@ S fw.get(int p)
 - (2): `op(a[l],a[l+1], ... , a[r-1])` を計算する．
 
 ### 計算量
-- $O(log n)$
+- $O(\log n)$
 
 ## lower_bound
 
