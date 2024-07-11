@@ -53,8 +53,8 @@ data:
   timestamp: '2024-06-18 19:14:09+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - verify/verify-yosupo-matrix/matrix_product.test.cpp
   - verify/verify-yosupo-matrix/pow_of_matrix.test.cpp
+  - verify/verify-yosupo-matrix/matrix_product.test.cpp
 documentation_of: matrix/matrix.hpp
 layout: document
 redirect_from:

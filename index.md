@@ -6,6 +6,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: data-structure/Fenwick_Tree.hpp
       title: Fenwick Tree
+  - name: graph
+    pages:
+    - icon: ':warning:'
+      path: graph/dijkstra.hpp
+      title: graph/dijkstra.hpp
   - name: math
     pages:
     - icon: ':warning:'
