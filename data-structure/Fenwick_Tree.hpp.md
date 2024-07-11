@@ -176,4 +176,4 @@ int fw.lower_bound(S x, bool comp)
 `comp(x,op(a[0],a[1], ..., a[r-1]))=true` となる最小の `r` を返す．
 
 ### 計算量
-- $O(log n)$
+- $O(\log n)$
