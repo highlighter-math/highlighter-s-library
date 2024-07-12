@@ -13,9 +13,6 @@ data:
       title: graph/dijkstra.hpp
   - name: math
     pages:
-    - icon: ':warning:'
-      path: math/in_fac.hpp
-      title: math/in_fac.hpp
     - icon: ':heavy_check_mark:'
       path: math/mod_sqrt.hpp
       title: math/mod_sqrt.hpp
