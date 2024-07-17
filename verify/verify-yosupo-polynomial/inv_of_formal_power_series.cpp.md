@@ -140,16 +140,16 @@ data:
     \t\treturn FormalPowerSeries(f)/=g;\n\t}\n\tfriend FormalPowerSeries operator/(const\
     \ T &g,const FormalPowerSeries &f){\n\t\treturn FormalPowerSeries(f).inv()*g;\n\
     \t}\n};\n#line 4 \"verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp\"\
-    \n\nint main(){\n\tint N;\n\tscanf(\"%d\",&N);\n\tFormalPowerSeries F(N);\n\t\
-    for(int i=0;i<N;i++){\n\t\tint k;\n\t\tscanf(\"%d\",&k);\n\t\tF.vec[i]=k;\n\t\
+    \n\nint main(){\n\tint N;\n\tscanf(\"%d\",&N);\n\tFormalPowerSeries<mint> F(N);\n\
+    \tfor(int i=0;i<N;i++){\n\t\tint k;\n\t\tscanf(\"%d\",&k);\n\t\tF.vec[i]=k;\n\t\
     }\n\tF=F.inv();\n\tfor(int i=0;i<N;i++){\n\t\tprintf(\"%d \",F.vec[i].val());\n\
     \t}\n\tprintf(\"\\n\");\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/inv_of_formal_power_series\"\
     \n#include \"../../polynomial/FormalPowerSeries.hpp\"\n#include<stdio.h>\n\nint\
-    \ main(){\n\tint N;\n\tscanf(\"%d\",&N);\n\tFormalPowerSeries F(N);\n\tfor(int\
-    \ i=0;i<N;i++){\n\t\tint k;\n\t\tscanf(\"%d\",&k);\n\t\tF.vec[i]=k;\n\t}\n\tF=F.inv();\n\
-    \tfor(int i=0;i<N;i++){\n\t\tprintf(\"%d \",F.vec[i].val());\n\t}\n\tprintf(\"\
-    \\n\");\n}\n"
+    \ main(){\n\tint N;\n\tscanf(\"%d\",&N);\n\tFormalPowerSeries<mint> F(N);\n\t\
+    for(int i=0;i<N;i++){\n\t\tint k;\n\t\tscanf(\"%d\",&k);\n\t\tF.vec[i]=k;\n\t\
+    }\n\tF=F.inv();\n\tfor(int i=0;i<N;i++){\n\t\tprintf(\"%d \",F.vec[i].val());\n\
+    \t}\n\tprintf(\"\\n\");\n}\n"
   dependsOn:
   - polynomial/FormalPowerSeries.hpp
   - math/mod_sqrt.hpp
@@ -157,7 +157,7 @@ data:
   isVerificationFile: false
   path: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
   requiredBy: []
-  timestamp: '2024-07-17 21:19:08+09:00'
+  timestamp: '2024-07-17 21:24:59+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
