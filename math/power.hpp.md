@@ -5,6 +5,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: math/mod_sqrt.hpp
     title: math/mod_sqrt.hpp
+  - icon: ':warning:'
+    path: polynomial/FormalPowerSeries.hpp
+    title: polynomial/FormalPowerSeries.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: verify/verify-aoj-ntl/ntl_1_b.test.cpp
@@ -33,6 +36,7 @@ data:
   isVerificationFile: false
   path: math/power.hpp
   requiredBy:
+  - polynomial/FormalPowerSeries.hpp
   - math/mod_sqrt.hpp
   timestamp: '2024-06-18 23:43:22+09:00'
   verificationStatus: LIBRARY_ALL_AC

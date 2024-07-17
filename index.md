@@ -24,6 +24,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: matrix/matrix.hpp
       title: matrix/matrix.hpp
+  - name: polynomial
+    pages:
+    - icon: ':warning:'
+      path: polynomial/FormalPowerSeries.hpp
+      title: polynomial/FormalPowerSeries.hpp
   verificationCategories:
   - name: verify/verify-aoj-grl
     pages:

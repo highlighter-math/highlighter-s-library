@@ -4,7 +4,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: math/power.hpp
     title: power
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: polynomial/FormalPowerSeries.hpp
+    title: polynomial/FormalPowerSeries.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: verify/verify-yosupo-math/sqrt_mod.test.cpp
@@ -56,7 +59,8 @@ data:
   - math/power.hpp
   isVerificationFile: false
   path: math/mod_sqrt.hpp
-  requiredBy: []
+  requiredBy:
+  - polynomial/FormalPowerSeries.hpp
   timestamp: '2024-07-17 20:33:03+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
