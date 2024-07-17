@@ -4,7 +4,7 @@ data:
   _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
     path: math/mod_sqrt.hpp
-    title: math/mod_sqrt.hpp
+    title: mod sqrt
   - icon: ':warning:'
     path: polynomial/FormalPowerSeries.hpp
     title: polynomial/FormalPowerSeries.hpp
