@@ -13,6 +13,9 @@ data:
     path: verify/verify-yosupo-math/sqrt_mod.test.cpp
     title: verify/verify-yosupo-math/sqrt_mod.test.cpp
   - icon: ':heavy_check_mark:'
+    path: verify/verify-yosupo-polynomial/exp_of_formal_power_series.test.cpp
+    title: verify/verify-yosupo-polynomial/exp_of_formal_power_series.test.cpp
+  - icon: ':heavy_check_mark:'
     path: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
     title: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
   _isVerificationFailed: false
@@ -61,6 +64,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
+  - verify/verify-yosupo-polynomial/exp_of_formal_power_series.test.cpp
   - verify/verify-yosupo-math/sqrt_mod.test.cpp
 documentation_of: math/mod_sqrt.hpp
 layout: document
