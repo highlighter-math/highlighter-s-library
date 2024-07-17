@@ -5,5 +5,6 @@
 "verify/verify-yosupo-math/sqrt_mod.test.cpp": "2024-07-17 20:53:54 +0900",
 "verify/verify-yosupo-matrix/matrix_product.test.cpp": "2024-06-18 19:14:09 +0900",
 "verify/verify-yosupo-matrix/pow_of_matrix.test.cpp": "2024-06-18 19:14:09 +0900",
+"verify/verify-yosupo-polynomial/exp_of_formal_power_series.test.cpp": "2024-07-17 21:35:21 +0900",
 "verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp": "2024-07-17 21:31:40 +0900"
 }
