@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: graph/dijkstra.hpp
-    title: graph/dijkstra.hpp
+    title: dijkstra
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false

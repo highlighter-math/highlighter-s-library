@@ -10,7 +10,7 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: graph/dijkstra.hpp
-      title: graph/dijkstra.hpp
+      title: dijkstra
   - name: math
     pages:
     - icon: ':heavy_check_mark:'
