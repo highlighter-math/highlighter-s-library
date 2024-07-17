@@ -5,16 +5,16 @@ data:
     path: math/power.hpp
     title: power
   _extendedRequiredBy:
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: polynomial/FormalPowerSeries.hpp
     title: polynomial/FormalPowerSeries.hpp
-  - icon: ':warning:'
-    path: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
-    title: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: verify/verify-yosupo-math/sqrt_mod.test.cpp
     title: verify/verify-yosupo-math/sqrt_mod.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
+    title: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -56,11 +56,11 @@ data:
   isVerificationFile: false
   path: math/mod_sqrt.hpp
   requiredBy:
-  - verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
   - polynomial/FormalPowerSeries.hpp
   timestamp: '2024-07-17 20:53:54+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
   - verify/verify-yosupo-math/sqrt_mod.test.cpp
 documentation_of: math/mod_sqrt.hpp
 layout: document

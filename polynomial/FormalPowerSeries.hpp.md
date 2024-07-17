@@ -7,14 +7,14 @@ data:
   - icon: ':heavy_check_mark:'
     path: math/power.hpp
     title: power
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
-    title: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
-  _extendedVerifiedWith: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
+    title: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"polynomial/FormalPowerSeries.hpp\"\n#include<vector>\n#include<queue>\n\
@@ -244,11 +244,11 @@ data:
   - math/power.hpp
   isVerificationFile: false
   path: polynomial/FormalPowerSeries.hpp
-  requiredBy:
-  - verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
+  requiredBy: []
   timestamp: '2024-07-17 21:13:34+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
 documentation_of: polynomial/FormalPowerSeries.hpp
 layout: document
 redirect_from:

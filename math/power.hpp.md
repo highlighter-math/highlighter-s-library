@@ -5,12 +5,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: math/mod_sqrt.hpp
     title: mod sqrt
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: polynomial/FormalPowerSeries.hpp
     title: polynomial/FormalPowerSeries.hpp
-  - icon: ':warning:'
-    path: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
-    title: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: verify/verify-aoj-ntl/ntl_1_b.test.cpp
@@ -18,6 +15,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: verify/verify-yosupo-math/sqrt_mod.test.cpp
     title: verify/verify-yosupo-math/sqrt_mod.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
+    title: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -37,12 +37,12 @@ data:
   isVerificationFile: false
   path: math/power.hpp
   requiredBy:
-  - verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
   - polynomial/FormalPowerSeries.hpp
   - math/mod_sqrt.hpp
   timestamp: '2024-07-17 20:49:00+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
   - verify/verify-yosupo-math/sqrt_mod.test.cpp
   - verify/verify-aoj-ntl/ntl_1_b.test.cpp
 documentation_of: math/power.hpp

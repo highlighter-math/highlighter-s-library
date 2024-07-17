@@ -7,18 +7,20 @@ data:
   - icon: ':heavy_check_mark:'
     path: math/power.hpp
     title: power
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: polynomial/FormalPowerSeries.hpp
     title: polynomial/FormalPowerSeries.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
+    '*NOT_SPECIAL_COMMENTS*': ''
+    PROBLEM: https://judge.yosupo.jp/problem/inv_of_formal_power_series
     links:
     - https://judge.yosupo.jp/problem/inv_of_formal_power_series
-  bundledCode: "#line 1 \"verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp\"\
+  bundledCode: "#line 1 \"verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp\"\
     \n#define PROBLEM \"https://judge.yosupo.jp/problem/inv_of_formal_power_series\"\
     \n#line 2 \"polynomial/FormalPowerSeries.hpp\"\n#include<vector>\n#include<queue>\n\
     #include<atcoder/modint>\n#include<atcoder/convolution>\nusing namespace std;\n\
@@ -139,7 +141,7 @@ data:
     \tfriend FormalPowerSeries operator/(const FormalPowerSeries &f,const T &g){\n\
     \t\treturn FormalPowerSeries(f)/=g;\n\t}\n\tfriend FormalPowerSeries operator/(const\
     \ T &g,const FormalPowerSeries &f){\n\t\treturn FormalPowerSeries(f).inv()*g;\n\
-    \t}\n};\n#line 4 \"verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp\"\
+    \t}\n};\n#line 4 \"verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp\"\
     \n\nint main(){\n\tint N;\n\tscanf(\"%d\",&N);\n\tFormalPowerSeries<mint> F(N);\n\
     \tfor(int i=0;i<N;i++){\n\t\tint k;\n\t\tscanf(\"%d\",&k);\n\t\tF.vec[i]=k;\n\t\
     }\n\tF=F.inv();\n\tfor(int i=0;i<N;i++){\n\t\tprintf(\"%d \",F.vec[i].val());\n\
@@ -154,16 +156,16 @@ data:
   - polynomial/FormalPowerSeries.hpp
   - math/mod_sqrt.hpp
   - math/power.hpp
-  isVerificationFile: false
-  path: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
+  isVerificationFile: true
+  path: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
   requiredBy: []
-  timestamp: '2024-07-17 21:24:59+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
+  timestamp: '2024-07-17 21:31:40+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
+documentation_of: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
 layout: document
 redirect_from:
-- /library/verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
-- /library/verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp.html
-title: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
+- /verify/verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
+- /verify/verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp.html
+title: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
 ---

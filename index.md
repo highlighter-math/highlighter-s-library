@@ -26,14 +26,9 @@ data:
       title: matrix/matrix.hpp
   - name: polynomial
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: polynomial/FormalPowerSeries.hpp
       title: polynomial/FormalPowerSeries.hpp
-  - name: verify/verify-yosupo-polynomial
-    pages:
-    - icon: ':warning:'
-      path: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
-      title: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
   verificationCategories:
   - name: verify/verify-aoj-grl
     pages:
@@ -63,5 +58,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: verify/verify-yosupo-matrix/pow_of_matrix.test.cpp
       title: verify/verify-yosupo-matrix/pow_of_matrix.test.cpp
+  - name: verify/verify-yosupo-polynomial
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
+      title: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
 layout: toppage
 ---
