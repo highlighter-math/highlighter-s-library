@@ -13,10 +13,10 @@ data:
       title: graph/dijkstra.hpp
   - name: math
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: math/mod_sqrt.hpp
       title: math/mod_sqrt.hpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: math/power.hpp
       title: power
   - name: matrix
@@ -37,7 +37,7 @@ data:
       title: verify/verify-aoj-grl/grl_1_a.test.cpp
   - name: verify/verify-aoj-ntl
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: verify/verify-aoj-ntl/ntl_1_b.test.cpp
       title: verify/verify-aoj-ntl/ntl_1_b.test.cpp
   - name: verify/verify-yosupo-datastructure
@@ -47,7 +47,7 @@ data:
       title: verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp
   - name: verify/verify-yosupo-math
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: verify/verify-yosupo-math/sqrt_mod.test.cpp
       title: verify/verify-yosupo-math/sqrt_mod.test.cpp
   - name: verify/verify-yosupo-matrix

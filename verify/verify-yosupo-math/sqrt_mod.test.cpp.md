@@ -1,17 +1,17 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: math/mod_sqrt.hpp
     title: math/mod_sqrt.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: math/power.hpp
     title: power
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/sqrt_mod
@@ -19,12 +19,11 @@ data:
     - https://judge.yosupo.jp/problem/sqrt_mod
   bundledCode: "#line 1 \"verify/verify-yosupo-math/sqrt_mod.test.cpp\"\n#define PROBLEM\
     \ \"https://judge.yosupo.jp/problem/sqrt_mod\"\n#include<stdio.h>\n#include<utility>\n\
-    #line 2 \"math/power.hpp\"\n#include<functional>\n\ntemplate<class S>\nS power(S\
-    \ a,long long b,auto &op,auto &e){\n\tstatic_assert(std::is_convertible_v<decltype(op),\
-    \ std::function<S(S, S)>>,\"op must work as S(S, S)\");\n\tstatic_assert(std::is_convertible_v<decltype(e),\
-    \ std::function<S()>>,\"e must work as S()\");\n    S mul=a;\n    S ans=e();\n\
-    \    while(b){\n        if(b&1){\n        \tans=op(ans,mul);\n        }\n    \
-    \    b>>=1;\n        mul=op(mul,mul);\n    }\n    return ans;\n}\n#line 5 \"math/mod_sqrt.hpp\"\
+    #line 2 \"math/power.hpp\"\ntemplate<class S>\nS power(S a,S b,S p=-1){\n\tS mul=a;\n\
+    \tS res=1;\n\tif(p==-1){\n\t\twhile(b){\n\t\t\tif(b&1){\n\t\t\t\tres*=mul;\n\t\
+    \t\t}\n\t\t\tmul*=mul;\n\t\t\tb>>=1;\n\t\t}\n\t\treturn res;\n\t}\n\twhile(b){\n\
+    \t\tif(b&1){\n\t\t\tres*=mul;\n\t\t\tres%=p;\n\t\t}\n\t\tmul*=mul;\n\t\tmul%=p;\n\
+    \t\tb>>=1;\n\t}\n\tif(res<0)res+=p;\n\treturn res;\n}\n#line 5 \"math/mod_sqrt.hpp\"\
     \n\nlong long mod_sqrt(long long Y,long long p){\n    if(p==2 || Y==0){\n    \
     \    return Y;\n    }\n    auto op=[&](long long a,long long b){\n    \treturn\
     \ a%p*b%p;\n    };\n    auto e=[](){\n    \treturn 1LL;\n    };\n    if(power<long\
@@ -54,8 +53,8 @@ data:
   isVerificationFile: true
   path: verify/verify-yosupo-math/sqrt_mod.test.cpp
   requiredBy: []
-  timestamp: '2024-07-17 20:33:03+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2024-07-17 20:49:00+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: verify/verify-yosupo-math/sqrt_mod.test.cpp
 layout: document
