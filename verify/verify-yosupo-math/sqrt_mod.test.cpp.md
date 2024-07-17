@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: math/mod_sqrt.hpp
     title: math/mod_sqrt.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: math/power.hpp
     title: power
   _extendedRequiredBy: []

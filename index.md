@@ -16,7 +16,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: math/mod_sqrt.hpp
       title: math/mod_sqrt.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: math/power.hpp
       title: power
   - name: matrix
@@ -37,7 +37,7 @@ data:
       title: verify/verify-aoj-grl/grl_1_a.test.cpp
   - name: verify/verify-aoj-ntl
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: verify/verify-aoj-ntl/ntl_1_b.test.cpp
       title: verify/verify-aoj-ntl/ntl_1_b.test.cpp
   - name: verify/verify-yosupo-datastructure

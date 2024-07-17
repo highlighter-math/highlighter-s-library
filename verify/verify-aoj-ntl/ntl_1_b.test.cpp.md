@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: math/power.hpp
     title: power
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/problems/NTL_1_B
@@ -21,22 +21,19 @@ data:
     \t\t}\n\t\t\tmul*=mul;\n\t\t\tb>>=1;\n\t\t}\n\t\treturn res;\n\t}\n\twhile(b){\n\
     \t\tif(b&1){\n\t\t\tres*=mul;\n\t\t\tres%=p;\n\t\t}\n\t\tmul*=mul;\n\t\tmul%=p;\n\
     \t\tb>>=1;\n\t}\n\tif(res<0)res+=p;\n\treturn res;\n}\n#line 4 \"verify/verify-aoj-ntl/ntl_1_b.test.cpp\"\
-    \n\nlong long p=1000000007LL;\n\nlong long op(long long a,long long b){\n\treturn\
-    \ a%p*b%p;\n}\n\nlong long e(){\n\treturn 1LL;\n}\n\nint main(){\n\tlong long\
-    \ a,b;\n\tscanf(\"%lld%lld\",&a,&b);\n\tprintf(\"%lld\\n\",power<long long>(a,b,op,e));\n\
-    }\n"
+    \n\nlong long p=1000000007LL;\n\nint main(){\n\tlong long a,b;\n\tscanf(\"%lld%lld\"\
+    ,&a,&b);\n\tprintf(\"%lld\\n\",power(a,b,p));\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/NTL_1_B\"\n#include<stdio.h>\n\
-    #include \"../../math/power.hpp\"\n\nlong long p=1000000007LL;\n\nlong long op(long\
-    \ long a,long long b){\n\treturn a%p*b%p;\n}\n\nlong long e(){\n\treturn 1LL;\n\
-    }\n\nint main(){\n\tlong long a,b;\n\tscanf(\"%lld%lld\",&a,&b);\n\tprintf(\"\
-    %lld\\n\",power<long long>(a,b,op,e));\n}\n"
+    #include \"../../math/power.hpp\"\n\nlong long p=1000000007LL;\n\nint main(){\n\
+    \tlong long a,b;\n\tscanf(\"%lld%lld\",&a,&b);\n\tprintf(\"%lld\\n\",power(a,b,p));\n\
+    }\n"
   dependsOn:
   - math/power.hpp
   isVerificationFile: true
   path: verify/verify-aoj-ntl/ntl_1_b.test.cpp
   requiredBy: []
-  timestamp: '2024-07-17 20:49:00+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2024-07-17 20:55:55+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: verify/verify-aoj-ntl/ntl_1_b.test.cpp
 layout: document
