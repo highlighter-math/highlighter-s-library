@@ -125,10 +125,10 @@ data:
     \ T &g,const FormalPowerSeries &f){\n\t\treturn -FormalPowerSeries(f)+g;\n\t}\n\
     \tFormalPowerSeries operator-(const FormalPowerSeries &g) const{\n\t\treturn FormalPowerSeries(*this)-=g;\n\
     \t}\n\tFormalPowerSeries operator*(const FormalPowerSeries &g) const{\n\t\treturn\
-    \ FormalPowerSeries(*this)*=g;\n\t}\n    friend FormalPowerSeries operator*(const\
-    \ FormalPowerSeries &f, const T &g){\n        return FormalPowerSeries(f)*=g;\n\
-    \    }\n    friend FormalPowerSeries operator*(const T &g, const FormalPowerSeries\
-    \ &f){\n    \treturn FormalPowerSeries(f)*=g;\n    }\n\tFormalPowerSeries operator/(const\
+    \ FormalPowerSeries(*this)*=g;\n\t}\n\tfriend FormalPowerSeries operator*(const\
+    \ FormalPowerSeries &f, const T &g){\n\t\treturn FormalPowerSeries(f)*=g;\n\t\
+    }\n\tfriend FormalPowerSeries operator*(const T &g, const FormalPowerSeries &f){\n\
+    \t\treturn FormalPowerSeries(f)*=g;\n\t}\n\tFormalPowerSeries operator/(const\
     \ FormalPowerSeries &g) const{\n\t\treturn FormalPowerSeries(*this)/=g;\n\t}\n\
     \tfriend FormalPowerSeries operator/(const FormalPowerSeries &f,const T &g){\n\
     \t\treturn FormalPowerSeries(f)/=g;\n\t}\n\tfriend FormalPowerSeries operator/(const\
@@ -227,10 +227,10 @@ data:
     \ T &g,const FormalPowerSeries &f){\n\t\treturn -FormalPowerSeries(f)+g;\n\t}\n\
     \tFormalPowerSeries operator-(const FormalPowerSeries &g) const{\n\t\treturn FormalPowerSeries(*this)-=g;\n\
     \t}\n\tFormalPowerSeries operator*(const FormalPowerSeries &g) const{\n\t\treturn\
-    \ FormalPowerSeries(*this)*=g;\n\t}\n    friend FormalPowerSeries operator*(const\
-    \ FormalPowerSeries &f, const T &g){\n        return FormalPowerSeries(f)*=g;\n\
-    \    }\n    friend FormalPowerSeries operator*(const T &g, const FormalPowerSeries\
-    \ &f){\n    \treturn FormalPowerSeries(f)*=g;\n    }\n\tFormalPowerSeries operator/(const\
+    \ FormalPowerSeries(*this)*=g;\n\t}\n\tfriend FormalPowerSeries operator*(const\
+    \ FormalPowerSeries &f, const T &g){\n\t\treturn FormalPowerSeries(f)*=g;\n\t\
+    }\n\tfriend FormalPowerSeries operator*(const T &g, const FormalPowerSeries &f){\n\
+    \t\treturn FormalPowerSeries(f)*=g;\n\t}\n\tFormalPowerSeries operator/(const\
     \ FormalPowerSeries &g) const{\n\t\treturn FormalPowerSeries(*this)/=g;\n\t}\n\
     \tfriend FormalPowerSeries operator/(const FormalPowerSeries &f,const T &g){\n\
     \t\treturn FormalPowerSeries(f)/=g;\n\t}\n\tfriend FormalPowerSeries operator/(const\
@@ -242,7 +242,7 @@ data:
   isVerificationFile: false
   path: polynomial/FormalPowerSeries.hpp
   requiredBy: []
-  timestamp: '2024-07-17 20:53:54+09:00'
+  timestamp: '2024-07-17 21:13:34+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: polynomial/FormalPowerSeries.hpp
