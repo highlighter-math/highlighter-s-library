@@ -317,25 +317,3 @@ class FormalPowerSeries{
 		return FormalPowerSeries(f).inv()*g;
 	}
 };
-
-int main(){
-	int N;
-	scanf("%d",&N);
-	vector<FormalPowerSeries<mint>> vec(N);
-	for(int i=0;i<N;i++){
-		int d;
-		scanf("%d",&d);
-		FormalPowerSeries<mint> F(d+1);
-		for(int j=0;j<=d;j++){
-			int a;
-			scanf("%d",&a);
-			F.vec[j]=mint(a);
-		}
-		vec[i]=F;
-	}
-	FormalPowerSeries<mint> F=product(vec);
-	for(mint i : F.vec){
-		printf("%d ",i.val());
-	}
-	printf("\n");
-}
