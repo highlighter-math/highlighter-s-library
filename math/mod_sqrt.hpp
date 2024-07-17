@@ -7,7 +7,7 @@ long long mod_sqrt(long long Y,long long p){
 	if(p==2 || Y==0){
 		return Y;
 	}
-	if(power(Y,(p-1)/2LL)==p-1){
+	if(power(Y,(p-1)/2LL,p)==p-1){
 		return -1;
 	}
 	int Z=0;
@@ -17,7 +17,7 @@ long long mod_sqrt(long long Y,long long p){
 		if(ZZ<0){
 			ZZ+=p;
 		}
-		if(power(ZZ,(p-1)/2)==p-1){
+		if(power(ZZ,(p-1)/2,p)==p-1){
 			break;
 		}
 		Z++;
