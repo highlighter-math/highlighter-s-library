@@ -13,10 +13,10 @@ data:
       title: graph/dijkstra.hpp
   - name: math
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: math/mod_sqrt.hpp
       title: math/mod_sqrt.hpp
-    - icon: ':x:'
+    - icon: ':question:'
       path: math/power.hpp
       title: power
   - name: matrix
@@ -47,7 +47,7 @@ data:
       title: verify/verify-yosupo-datastructure/point_add_range_sum.test.cpp
   - name: verify/verify-yosupo-math
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: verify/verify-yosupo-math/sqrt_mod.test.cpp
       title: verify/verify-yosupo-math/sqrt_mod.test.cpp
   - name: verify/verify-yosupo-matrix

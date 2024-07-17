@@ -2,7 +2,7 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: math/mod_sqrt.hpp
     title: math/mod_sqrt.hpp
   - icon: ':warning:'
@@ -12,12 +12,12 @@ data:
   - icon: ':x:'
     path: verify/verify-aoj-ntl/ntl_1_b.test.cpp
     title: verify/verify-aoj-ntl/ntl_1_b.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: verify/verify-yosupo-math/sqrt_mod.test.cpp
     title: verify/verify-yosupo-math/sqrt_mod.test.cpp
   _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 2 \"math/power.hpp\"\ntemplate<class S>\nS power(S a,S b,S p=-1){\n\
@@ -37,7 +37,7 @@ data:
   - polynomial/FormalPowerSeries.hpp
   - math/mod_sqrt.hpp
   timestamp: '2024-07-17 20:49:00+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - verify/verify-yosupo-math/sqrt_mod.test.cpp
   - verify/verify-aoj-ntl/ntl_1_b.test.cpp

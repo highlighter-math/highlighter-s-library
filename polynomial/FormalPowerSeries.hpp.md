@@ -1,10 +1,10 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: math/mod_sqrt.hpp
     title: math/mod_sqrt.hpp
-  - icon: ':x:'
+  - icon: ':question:'
     path: math/power.hpp
     title: power
   _extendedRequiredBy: []
@@ -23,26 +23,23 @@ data:
     }\n\t\treturn res;\n\t}\n\twhile(b){\n\t\tif(b&1){\n\t\t\tres*=mul;\n\t\t\tres%=p;\n\
     \t\t}\n\t\tmul*=mul;\n\t\tmul%=p;\n\t\tb>>=1;\n\t}\n\tif(res<0)res+=p;\n\treturn\
     \ res;\n}\n#line 5 \"math/mod_sqrt.hpp\"\n\nlong long mod_sqrt(long long Y,long\
-    \ long p){\n    if(p==2 || Y==0){\n        return Y;\n    }\n    auto op=[&](long\
-    \ long a,long long b){\n    \treturn a%p*b%p;\n    };\n    auto e=[](){\n    \t\
-    return 1LL;\n    };\n    if(power<long long>(Y,(p-1)/2LL,op,e)==p-1){\n      \
-    \  return -1;\n    }\n    int Z=0;\n    while(true){\n        long long ZZ=Z*Z%p-Y%p;\n\
-    \        ZZ%=p;\n        if(ZZ<0){\n            ZZ+=p;\n        }\n        if(power<long\
-    \ long>(ZZ,(p-1)/2,op,e)==p-1){\n            break;\n        }\n        Z++;\n\
-    \    }\n    std::pair<long long,long long> mul=std::make_pair(Z,1);\n    int t=(p+1)/2;\n\
-    \    std::pair<long long,long long> q=std::make_pair(1,0);\n    while(t){\n  \
-    \      if(t&1){\n            int k=q.first*mul.first%p+(Z*Z-Y)%p*q.second%p*mul.second%p;\n\
-    \            int l=q.second*mul.first%p+q.first*mul.second%p;\n            l%=p;\n\
-    \            k%=p;\n            if(k<0){\n                k+=p;\n            }\n\
-    \            q=std::make_pair(k,l);\n        }\n        t>>=1;\n        int f=mul.first*mul.first%p+(Z*Z-Y)%p*mul.second%p*mul.second%p;\n\
-    \        f%=p;\n        if(f<0){\n            f+=p;\n        }\n        int s=mul.second*mul.first%p*2%p;\n\
-    \        mul=std::make_pair(f,s);\n    }\n    return q.first;\n}\n#line 11 \"\
-    polynomial/FormalPowerSeries.hpp\"\n\ntemplate<class T>\nclass FormalPowerSeries{\n\
-    \tprivate:\n\tvector<mint> fac;\n\tvoid in_fac(int N=1000000){\n\t\tif((int)(fac.size())>=N){\n\
-    \t\t\treturn;\n\t\t}\n\t\tif(N>1000000){\n\t\t\tN=1000000;\n\t\t}\n\t\tfac.resize(N);\n\
-    \t\tfac[0]=1;\n\t\tfor(int i=1;i<N;i++){\n\t\t\tfac[i]=fac[i-1]*mint(i);\n\t\t\
-    }\n\t}\n\tpublic:\n\tvector<T> vec;\n\tFormalPowerSeries():vec(0,0){}\n\tFormalPowerSeries(int\
-    \ siz) : vec(siz){}\n\tFormalPowerSeries(vector<T> A){\n\t\tvec=A;\n\t}\n\tFormalPowerSeries\
+    \ long p){\n\tif(p==2 || Y==0){\n\t\treturn Y;\n\t}\n\tif(power(Y,(p-1)/2LL,p)==p-1){\n\
+    \t\treturn -1;\n\t}\n\tint Z=0;\n\twhile(true){\n\t\tlong long ZZ=Z*Z%p-Y%p;\n\
+    \t\tZZ%=p;\n\t\tif(ZZ<0){\n\t\t\tZZ+=p;\n\t\t}\n\t\tif(power(ZZ,(p-1)/2,p)==p-1){\n\
+    \t\t\tbreak;\n\t\t}\n\t\tZ++;\n\t}\n\tstd::pair<long long,long long> mul=std::make_pair(Z,1);\n\
+    \tint t=(p+1)/2;\n\tstd::pair<long long,long long> q=std::make_pair(1,0);\n\t\
+    while(t){\n\t\tif(t&1){\n\t\t\tint k=q.first*mul.first%p+(Z*Z-Y)%p*q.second%p*mul.second%p;\n\
+    \t\t\tint l=q.second*mul.first%p+q.first*mul.second%p;\n\t\t\tl%=p;\n\t\t\tk%=p;\n\
+    \t\t\tif(k<0){\n\t\t\t\tk+=p;\n\t\t\t}\n\t\t\tq=std::make_pair(k,l);\n\t\t}\n\t\
+    \tt>>=1;\n\t\tint f=mul.first*mul.first%p+(Z*Z-Y)%p*mul.second%p*mul.second%p;\n\
+    \t\tf%=p;\n\t\tif(f<0){\n\t\t\tf+=p;\n\t\t}\n\t\tint s=mul.second*mul.first%p*2%p;\n\
+    \t\tmul=std::make_pair(f,s);\n\t}\n\treturn q.first;\n}\n#line 11 \"polynomial/FormalPowerSeries.hpp\"\
+    \n\ntemplate<class T>\nclass FormalPowerSeries{\n\tprivate:\n\tvector<mint> fac;\n\
+    \tvoid in_fac(int N=1000000){\n\t\tif((int)(fac.size())>=N){\n\t\t\treturn;\n\t\
+    \t}\n\t\tif(N>1000000){\n\t\t\tN=1000000;\n\t\t}\n\t\tfac.resize(N);\n\t\tfac[0]=1;\n\
+    \t\tfor(int i=1;i<N;i++){\n\t\t\tfac[i]=fac[i-1]*mint(i);\n\t\t}\n\t}\n\tpublic:\n\
+    \tvector<T> vec;\n\tFormalPowerSeries():vec(0,0){}\n\tFormalPowerSeries(int siz)\
+    \ : vec(siz){}\n\tFormalPowerSeries(vector<T> A){\n\t\tvec=A;\n\t}\n\tFormalPowerSeries\
     \ pre(int deg) const{\n\t\tif(deg==-1){\n\t\t\treturn *this;\n\t\t}\n\t\tFormalPowerSeries<T>\
     \ F(deg);\n\t\tfor(int i=0;i<deg;i++){\n\t\t\tif(i>=(int)((*this).vec.size())){\n\
     \t\t\t\tbreak;\n\t\t\t}\n\t\t\tF.vec[i]=(*this).vec[i];\n\t\t}\n\t\treturn F;\n\
@@ -245,7 +242,7 @@ data:
   isVerificationFile: false
   path: polynomial/FormalPowerSeries.hpp
   requiredBy: []
-  timestamp: '2024-07-17 20:49:00+09:00'
+  timestamp: '2024-07-17 20:53:54+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: polynomial/FormalPowerSeries.hpp
