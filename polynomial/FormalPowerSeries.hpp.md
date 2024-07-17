@@ -137,12 +137,7 @@ data:
     \tfriend FormalPowerSeries operator/(const FormalPowerSeries &f,const T &g){\n\
     \t\treturn FormalPowerSeries(f)/=g;\n\t}\n\tfriend FormalPowerSeries operator/(const\
     \ T &g,const FormalPowerSeries &f){\n\t\treturn FormalPowerSeries(f).inv()*g;\n\
-    \t}\n};\n\nint main(){\n\tint N;\n\tscanf(\"%d\",&N);\n\tvector<FormalPowerSeries<mint>>\
-    \ vec(N);\n\tfor(int i=0;i<N;i++){\n\t\tint d;\n\t\tscanf(\"%d\",&d);\n\t\tFormalPowerSeries<mint>\
-    \ F(d+1);\n\t\tfor(int j=0;j<=d;j++){\n\t\t\tint a;\n\t\t\tscanf(\"%d\",&a);\n\
-    \t\t\tF.vec[j]=mint(a);\n\t\t}\n\t\tvec[i]=F;\n\t}\n\tFormalPowerSeries<mint>\
-    \ F=product(vec);\n\tfor(mint i : F.vec){\n\t\tprintf(\"%d \",i.val());\n\t}\n\
-    \tprintf(\"\\n\");\n}\n"
+    \t}\n};\n"
   code: "#pragma once\n#include<vector>\n#include<queue>\n#include<atcoder/modint>\n\
     #include<atcoder/convolution>\nusing namespace std;\nusing namespace atcoder;\n\
     using mint=modint998244353;\n\n#include \"../math/mod_sqrt.hpp\"\n\ntemplate<class\
@@ -244,19 +239,14 @@ data:
     \tfriend FormalPowerSeries operator/(const FormalPowerSeries &f,const T &g){\n\
     \t\treturn FormalPowerSeries(f)/=g;\n\t}\n\tfriend FormalPowerSeries operator/(const\
     \ T &g,const FormalPowerSeries &f){\n\t\treturn FormalPowerSeries(f).inv()*g;\n\
-    \t}\n};\n\nint main(){\n\tint N;\n\tscanf(\"%d\",&N);\n\tvector<FormalPowerSeries<mint>>\
-    \ vec(N);\n\tfor(int i=0;i<N;i++){\n\t\tint d;\n\t\tscanf(\"%d\",&d);\n\t\tFormalPowerSeries<mint>\
-    \ F(d+1);\n\t\tfor(int j=0;j<=d;j++){\n\t\t\tint a;\n\t\t\tscanf(\"%d\",&a);\n\
-    \t\t\tF.vec[j]=mint(a);\n\t\t}\n\t\tvec[i]=F;\n\t}\n\tFormalPowerSeries<mint>\
-    \ F=product(vec);\n\tfor(mint i : F.vec){\n\t\tprintf(\"%d \",i.val());\n\t}\n\
-    \tprintf(\"\\n\");\n}\n"
+    \t}\n};\n"
   dependsOn:
   - math/mod_sqrt.hpp
   - math/power.hpp
   isVerificationFile: false
   path: polynomial/FormalPowerSeries.hpp
   requiredBy: []
-  timestamp: '2024-07-17 20:40:18+09:00'
+  timestamp: '2024-07-17 20:42:07+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: polynomial/FormalPowerSeries.hpp
