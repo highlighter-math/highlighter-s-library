@@ -25,8 +25,8 @@ data:
     \ std::function<S()>>,\"e must work as S()\");\n    S mul=a;\n    S ans=e();\n\
     \    while(b){\n        if(b&1){\n        \tans=op(ans,mul);\n        }\n    \
     \    b>>=1;\n        mul=op(mul,mul);\n    }\n    return ans;\n}\n#line 5 \"math/mod_sqrt.hpp\"\
-    \n\nlong long mod_sqrt(long long &Y,long long &p){\n    if(p==2 || Y==0){\n  \
-    \      return Y;\n    }\n    auto op=[&](long long a,long long b){\n    \treturn\
+    \n\nlong long mod_sqrt(long long Y,long long p){\n    if(p==2 || Y==0){\n    \
+    \    return Y;\n    }\n    auto op=[&](long long a,long long b){\n    \treturn\
     \ a%p*b%p;\n    };\n    auto e=[](){\n    \treturn 1LL;\n    };\n    if(power<long\
     \ long>(Y,(p-1)/2LL,op,e)==p-1){\n        return -1;\n    }\n    int Z=0;\n  \
     \  while(true){\n        long long ZZ=Z*Z%p-Y%p;\n        ZZ%=p;\n        if(ZZ<0){\n\
@@ -54,7 +54,7 @@ data:
   isVerificationFile: true
   path: verify/verify-yosupo-math/sqrt_mod.test.cpp
   requiredBy: []
-  timestamp: '2024-06-20 00:23:39+09:00'
+  timestamp: '2024-07-17 20:33:03+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: verify/verify-yosupo-math/sqrt_mod.test.cpp
