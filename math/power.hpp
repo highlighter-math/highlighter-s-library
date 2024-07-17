@@ -1,18 +1,27 @@
 #pragma once
-#include<functional>
-
 template<class S>
-S power(S a,long long b,auto &op,auto &e){
-	static_assert(std::is_convertible_v<decltype(op), std::function<S(S, S)>>,"op must work as S(S, S)");
-	static_assert(std::is_convertible_v<decltype(e), std::function<S()>>,"e must work as S()");
-    S mul=a;
-    S ans=e();
-    while(b){
-        if(b&1){
-        	ans=op(ans,mul);
-        }
-        b>>=1;
-        mul=op(mul,mul);
-    }
-    return ans;
+S power(S a,S b,S p=-1){
+	S mul=a;
+	S res=1;
+	if(p==-1){
+		while(b){
+			if(b&1){
+				res*=mul;
+			}
+			mul*=mul;
+			b>>=1;
+		}
+		return res;
+	}
+	while(b){
+		if(b&1){
+			res*=mul;
+			res%=p;
+		}
+		mul*=mul;
+		mul%=p;
+		b>>=1;
+	}
+	if(res<0)res+=p;
+	return res;
 }
