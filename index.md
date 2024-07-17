@@ -29,6 +29,11 @@ data:
     - icon: ':warning:'
       path: polynomial/FormalPowerSeries.hpp
       title: polynomial/FormalPowerSeries.hpp
+  - name: verify/verify-yosupo-polynomial
+    pages:
+    - icon: ':warning:'
+      path: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
+      title: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
   verificationCategories:
   - name: verify/verify-aoj-grl
     pages:

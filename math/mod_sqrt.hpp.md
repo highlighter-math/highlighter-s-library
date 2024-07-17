@@ -8,6 +8,9 @@ data:
   - icon: ':warning:'
     path: polynomial/FormalPowerSeries.hpp
     title: polynomial/FormalPowerSeries.hpp
+  - icon: ':warning:'
+    path: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
+    title: verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: verify/verify-yosupo-math/sqrt_mod.test.cpp
@@ -53,6 +56,7 @@ data:
   isVerificationFile: false
   path: math/mod_sqrt.hpp
   requiredBy:
+  - verify/verify-yosupo-polynomial/inv_of_formal_power_series.cpp
   - polynomial/FormalPowerSeries.hpp
   timestamp: '2024-07-17 20:53:54+09:00'
   verificationStatus: LIBRARY_ALL_AC
