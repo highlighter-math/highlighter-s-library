@@ -5,7 +5,7 @@
 int main(){
 	int N;
 	scanf("%d",&N);
-	FormalPowerSeries F(N);
+	FormalPowerSeries<mint> F(N);
 	for(int i=0;i<N;i++){
 		int k;
 		scanf("%d",&k);
