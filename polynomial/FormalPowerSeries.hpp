@@ -301,12 +301,12 @@ class FormalPowerSeries{
 	FormalPowerSeries operator*(const FormalPowerSeries &g) const{
 		return FormalPowerSeries(*this)*=g;
 	}
-    friend FormalPowerSeries operator*(const FormalPowerSeries &f, const T &g){
-        return FormalPowerSeries(f)*=g;
-    }
-    friend FormalPowerSeries operator*(const T &g, const FormalPowerSeries &f){
-    	return FormalPowerSeries(f)*=g;
-    }
+	friend FormalPowerSeries operator*(const FormalPowerSeries &f, const T &g){
+		return FormalPowerSeries(f)*=g;
+	}
+	friend FormalPowerSeries operator*(const T &g, const FormalPowerSeries &f){
+		return FormalPowerSeries(f)*=g;
+	}
 	FormalPowerSeries operator/(const FormalPowerSeries &g) const{
 		return FormalPowerSeries(*this)/=g;
 	}
