@@ -1,3 +1,8 @@
+---
+title: mod sqrt
+documentation_of: ../../math/mod_sqrt.hpp
+---
+
 ## 使い方
 - `mod_sqrt(long long Y,long long p)`
 
