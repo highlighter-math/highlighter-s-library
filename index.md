@@ -69,5 +69,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: verify/verify-yosupo-polynomial/log_of_formal_power_series.test.cpp
       title: verify/verify-yosupo-polynomial/log_of_formal_power_series.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp
+      title: verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp
 layout: toppage
 ---
