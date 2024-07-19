@@ -2,10 +2,10 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: math/mod_sqrt.hpp
     title: mod sqrt
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: polynomial/FormalPowerSeries.hpp
     title: polynomial/FormalPowerSeries.hpp
   _extendedVerifiedWith:
@@ -27,9 +27,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp
     title: verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp
-  _isVerificationFailed: false
+  - icon: ':x:'
+    path: verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
+    title: verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 2 \"math/power.hpp\"\ntemplate<class S>\nS power(S a,S b,S p=-1){\n\
@@ -49,12 +52,13 @@ data:
   - polynomial/FormalPowerSeries.hpp
   - math/mod_sqrt.hpp
   timestamp: '2024-07-17 20:49:00+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp
   - verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
   - verify/verify-yosupo-polynomial/log_of_formal_power_series.test.cpp
   - verify/verify-yosupo-polynomial/exp_of_formal_power_series.test.cpp
+  - verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
   - verify/verify-yosupo-math/sqrt_mod.test.cpp
   - verify/verify-aoj-ntl/ntl_1_b.test.cpp
 documentation_of: math/power.hpp

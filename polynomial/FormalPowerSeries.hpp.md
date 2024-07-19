@@ -1,10 +1,10 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: math/mod_sqrt.hpp
     title: mod sqrt
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: math/power.hpp
     title: power
   _extendedRequiredBy: []
@@ -21,9 +21,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp
     title: verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp
-  _isVerificationFailed: false
+  - icon: ':x:'
+    path: verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
+    title: verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 2 \"polynomial/FormalPowerSeries.hpp\"\n#include<vector>\n#include<queue>\n\
@@ -255,12 +258,13 @@ data:
   path: polynomial/FormalPowerSeries.hpp
   requiredBy: []
   timestamp: '2024-07-17 21:13:34+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp
   - verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
   - verify/verify-yosupo-polynomial/log_of_formal_power_series.test.cpp
   - verify/verify-yosupo-polynomial/exp_of_formal_power_series.test.cpp
+  - verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
 documentation_of: polynomial/FormalPowerSeries.hpp
 layout: document
 redirect_from:

@@ -12,16 +12,16 @@ data:
     title: polynomial/FormalPowerSeries.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://judge.yosupo.jp/problem/inv_of_formal_power_series
+    PROBLEM: https://judge.yosupo.jp/problem/sqrt_of_formal_power_series
     links:
-    - https://judge.yosupo.jp/problem/inv_of_formal_power_series
-  bundledCode: "#line 1 \"verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp\"\
-    \n#define PROBLEM \"https://judge.yosupo.jp/problem/inv_of_formal_power_series\"\
+    - https://judge.yosupo.jp/problem/sqrt_of_formal_power_series
+  bundledCode: "#line 1 \"verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp\"\
+    \n#define PROBLEM \"https://judge.yosupo.jp/problem/sqrt_of_formal_power_series\"\
     \n#line 2 \"polynomial/FormalPowerSeries.hpp\"\n#include<vector>\n#include<queue>\n\
     #include<atcoder/modint>\n#include<atcoder/convolution>\nusing namespace std;\n\
     using namespace atcoder;\nusing mint=modint998244353;\n\n#line 2 \"math/mod_sqrt.hpp\"\
@@ -141,31 +141,31 @@ data:
     \tfriend FormalPowerSeries operator/(const FormalPowerSeries &f,const T &g){\n\
     \t\treturn FormalPowerSeries(f)/=g;\n\t}\n\tfriend FormalPowerSeries operator/(const\
     \ T &g,const FormalPowerSeries &f){\n\t\treturn FormalPowerSeries(f).inv()*g;\n\
-    \t}\n};\n#line 4 \"verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp\"\
+    \t}\n};\n#line 4 \"verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp\"\
     \n\nint main(){\n\tint N;\n\tscanf(\"%d\",&N);\n\tFormalPowerSeries<mint> F(N);\n\
     \tfor(int i=0;i<N;i++){\n\t\tint k;\n\t\tscanf(\"%d\",&k);\n\t\tF.vec[i]=k;\n\t\
-    }\n\tF=F.inv();\n\tfor(int i=0;i<N;i++){\n\t\tprintf(\"%d \",F.vec[i].val());\n\
+    }\n\tF=F.sqrt();\n\tfor(int i=0;i<N;i++){\n\t\tprintf(\"%d \",F.vec[i].val());\n\
     \t}\n\tprintf(\"\\n\");\n}\n"
-  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/inv_of_formal_power_series\"\
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/sqrt_of_formal_power_series\"\
     \n#include \"../../polynomial/FormalPowerSeries.hpp\"\n#include<stdio.h>\n\nint\
     \ main(){\n\tint N;\n\tscanf(\"%d\",&N);\n\tFormalPowerSeries<mint> F(N);\n\t\
     for(int i=0;i<N;i++){\n\t\tint k;\n\t\tscanf(\"%d\",&k);\n\t\tF.vec[i]=k;\n\t\
-    }\n\tF=F.inv();\n\tfor(int i=0;i<N;i++){\n\t\tprintf(\"%d \",F.vec[i].val());\n\
+    }\n\tF=F.sqrt();\n\tfor(int i=0;i<N;i++){\n\t\tprintf(\"%d \",F.vec[i].val());\n\
     \t}\n\tprintf(\"\\n\");\n}\n"
   dependsOn:
   - polynomial/FormalPowerSeries.hpp
   - math/mod_sqrt.hpp
   - math/power.hpp
   isVerificationFile: true
-  path: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
+  path: verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
   requiredBy: []
-  timestamp: '2024-07-17 21:31:40+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2024-07-19 17:39:24+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
-documentation_of: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
+documentation_of: verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
 layout: document
 redirect_from:
-- /verify/verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
-- /verify/verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp.html
-title: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
+- /verify/verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
+- /verify/verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp.html
+title: verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
 ---

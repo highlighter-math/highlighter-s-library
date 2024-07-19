@@ -13,10 +13,10 @@ data:
       title: dijkstra
   - name: math
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: math/mod_sqrt.hpp
       title: mod sqrt
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: math/power.hpp
       title: power
   - name: matrix
@@ -26,7 +26,7 @@ data:
       title: matrix/matrix.hpp
   - name: polynomial
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: polynomial/FormalPowerSeries.hpp
       title: polynomial/FormalPowerSeries.hpp
   verificationCategories:
@@ -72,5 +72,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp
       title: verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp
+    - icon: ':x:'
+      path: verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
+      title: verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
 layout: toppage
 ---
