@@ -21,6 +21,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
     title: verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: verify/verify-yosupo-polynomial/log_of_formal_power_series.test.cpp
+    title: verify/verify-yosupo-polynomial/log_of_formal_power_series.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -46,6 +49,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
+  - verify/verify-yosupo-polynomial/log_of_formal_power_series.test.cpp
   - verify/verify-yosupo-polynomial/exp_of_formal_power_series.test.cpp
   - verify/verify-yosupo-math/sqrt_mod.test.cpp
   - verify/verify-aoj-ntl/ntl_1_b.test.cpp
