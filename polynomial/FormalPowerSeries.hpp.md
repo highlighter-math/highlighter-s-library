@@ -100,8 +100,8 @@ data:
     \t\t\t\tbreak;\n\t\t\t}\n\t\t\tl++;\n\t\t}\n\t\tif(l==(int)((*this).vec.size())){\n\
     \t\t\treturn (*this).pre(deg);\n\t\t}\n\t\tassert(l%2==0);\n\t\tFormalPowerSeries<T>\
     \ f((int)((*this).vec.size())-l);\n\t\tfor(int i=0;i<(int)((*this).vec.size())-l;i++){\n\
-    \t\t\tf.vec[i]=(*this).vec[i+l];\n\t\t}\n\t\tFormalPowerSeries<T> g({mod_sqrt((long\
-    \ long)f.vec[0].val(),998244353)});\n\t\twhile((int)(g.vec.size())<deg-l/2){\n\
+    \t\t\tf.vec[i]=(*this).vec[i+l];\n\t\t}\n\t\tFormalPowerSeries<T> g({mint(mod_sqrt((long\
+    \ long)f.vec[0].val(),998244353))});\n\t\twhile((int)(g.vec.size())<deg-l/2){\n\
     \t\t\tint k=(int)(g.vec.size());\n\t\t\tg=(g+f.pre(2*k)*g.inv(2*k))/mint(2);\n\
     \t\t\tg=g.pre(2*k);\n\t\t}\n\t\tg=g.pre(deg-l/2);\n\t\tFormalPowerSeries<T> h(deg);\n\
     \t\tfor(int i=l/2;i<deg;i++){\n\t\t\th.vec[i]=g.vec[i-l/2];\n\t\t}\n\t\treturn\
@@ -202,8 +202,8 @@ data:
     \t\t\t\tbreak;\n\t\t\t}\n\t\t\tl++;\n\t\t}\n\t\tif(l==(int)((*this).vec.size())){\n\
     \t\t\treturn (*this).pre(deg);\n\t\t}\n\t\tassert(l%2==0);\n\t\tFormalPowerSeries<T>\
     \ f((int)((*this).vec.size())-l);\n\t\tfor(int i=0;i<(int)((*this).vec.size())-l;i++){\n\
-    \t\t\tf.vec[i]=(*this).vec[i+l];\n\t\t}\n\t\tFormalPowerSeries<T> g({mod_sqrt((long\
-    \ long)f.vec[0].val(),998244353)});\n\t\twhile((int)(g.vec.size())<deg-l/2){\n\
+    \t\t\tf.vec[i]=(*this).vec[i+l];\n\t\t}\n\t\tFormalPowerSeries<T> g({mint(mod_sqrt((long\
+    \ long)f.vec[0].val(),998244353))});\n\t\twhile((int)(g.vec.size())<deg-l/2){\n\
     \t\t\tint k=(int)(g.vec.size());\n\t\t\tg=(g+f.pre(2*k)*g.inv(2*k))/mint(2);\n\
     \t\t\tg=g.pre(2*k);\n\t\t}\n\t\tg=g.pre(deg-l/2);\n\t\tFormalPowerSeries<T> h(deg);\n\
     \t\tfor(int i=l/2;i<deg;i++){\n\t\t\th.vec[i]=g.vec[i-l/2];\n\t\t}\n\t\treturn\
@@ -257,7 +257,7 @@ data:
   isVerificationFile: false
   path: polynomial/FormalPowerSeries.hpp
   requiredBy: []
-  timestamp: '2024-07-17 21:13:34+09:00'
+  timestamp: '2024-07-19 17:55:37+09:00'
   verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp
