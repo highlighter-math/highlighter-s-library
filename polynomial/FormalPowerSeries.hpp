@@ -187,7 +187,7 @@ class FormalPowerSeries{
 		for(int i=0;i<(int)((*this).vec.size())-l;i++){
 			f.vec[i]=(*this).vec[i+l];
 		}
-		FormalPowerSeries<T> g({mod_sqrt((long long)f.vec[0].val(),998244353)});
+		FormalPowerSeries<T> g({mint(mod_sqrt((long long)f.vec[0].val(),998244353))});
 		while((int)(g.vec.size())<deg-l/2){
 			int k=(int)(g.vec.size());
 			g=(g+f.pre(2*k)*g.inv(2*k))/mint(2);
