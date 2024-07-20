@@ -8,5 +8,6 @@
 "verify/verify-yosupo-polynomial/exp_of_formal_power_series.test.cpp": "2024-07-19 17:55:37 +0900",
 "verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp": "2024-07-19 17:55:37 +0900",
 "verify/verify-yosupo-polynomial/log_of_formal_power_series.test.cpp": "2024-07-19 17:55:37 +0900",
-"verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp": "2024-07-19 17:55:37 +0900"
+"verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp": "2024-07-19 17:55:37 +0900",
+"verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp": "2024-07-20 16:09:03 +0900"
 }
