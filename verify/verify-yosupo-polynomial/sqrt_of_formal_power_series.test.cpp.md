@@ -1,20 +1,20 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: math/mod_sqrt.hpp
     title: mod sqrt
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: math/power.hpp
     title: power
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: polynomial/FormalPowerSeries.hpp
     title: polynomial/FormalPowerSeries.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/sqrt_of_formal_power_series
@@ -144,14 +144,20 @@ data:
     \t}\n};\n#line 4 \"verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp\"\
     \n\nint main(){\n\tint N;\n\tscanf(\"%d\",&N);\n\tFormalPowerSeries<mint> F(N);\n\
     \tfor(int i=0;i<N;i++){\n\t\tint k;\n\t\tscanf(\"%d\",&k);\n\t\tF.vec[i]=k;\n\t\
-    }\n\tF=F.sqrt();\n\tfor(int i=0;i<N;i++){\n\t\tprintf(\"%d \",F.vec[i].val());\n\
-    \t}\n\tprintf(\"\\n\");\n}\n"
+    }\n\tint count=0;\n\tfor(int i=0;i<N;i++){\n\t\tif(F.vec[i]!=0){\n\t\t\tif(mod_sqrt((long\
+    \ long)F.vec[i].val(),998244353)==-1){\n\t\t\t\tprintf(\"-1\\n\");\n\t\t\t\treturn\
+    \ 0;\n\t\t\t}\n\t\t\tbreak;\n\t\t}\n\t\tcount++;\n\t}\n\tif(count%2==1 && count!=N){\n\
+    \t\tprintf(\"-1\\n\");\n\t\treturn 0;\n\t}\n\tF=F.sqrt();\n\tfor(int i=0;i<N;i++){\n\
+    \t\tprintf(\"%d \",F.vec[i].val());\n\t}\n\tprintf(\"\\n\");\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/sqrt_of_formal_power_series\"\
     \n#include \"../../polynomial/FormalPowerSeries.hpp\"\n#include<stdio.h>\n\nint\
     \ main(){\n\tint N;\n\tscanf(\"%d\",&N);\n\tFormalPowerSeries<mint> F(N);\n\t\
     for(int i=0;i<N;i++){\n\t\tint k;\n\t\tscanf(\"%d\",&k);\n\t\tF.vec[i]=k;\n\t\
-    }\n\tF=F.sqrt();\n\tfor(int i=0;i<N;i++){\n\t\tprintf(\"%d \",F.vec[i].val());\n\
-    \t}\n\tprintf(\"\\n\");\n}\n"
+    }\n\tint count=0;\n\tfor(int i=0;i<N;i++){\n\t\tif(F.vec[i]!=0){\n\t\t\tif(mod_sqrt((long\
+    \ long)F.vec[i].val(),998244353)==-1){\n\t\t\t\tprintf(\"-1\\n\");\n\t\t\t\treturn\
+    \ 0;\n\t\t\t}\n\t\t\tbreak;\n\t\t}\n\t\tcount++;\n\t}\n\tif(count%2==1 && count!=N){\n\
+    \t\tprintf(\"-1\\n\");\n\t\treturn 0;\n\t}\n\tF=F.sqrt();\n\tfor(int i=0;i<N;i++){\n\
+    \t\tprintf(\"%d \",F.vec[i].val());\n\t}\n\tprintf(\"\\n\");\n}\n"
   dependsOn:
   - polynomial/FormalPowerSeries.hpp
   - math/mod_sqrt.hpp
@@ -159,8 +165,8 @@ data:
   isVerificationFile: true
   path: verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
   requiredBy: []
-  timestamp: '2024-07-19 17:55:37+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2024-07-20 16:09:03+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
 layout: document
