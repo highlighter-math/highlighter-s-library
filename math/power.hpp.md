@@ -54,13 +54,13 @@ data:
   timestamp: '2024-07-17 20:49:00+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp
-  - verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
-  - verify/verify-yosupo-polynomial/log_of_formal_power_series.test.cpp
-  - verify/verify-yosupo-polynomial/exp_of_formal_power_series.test.cpp
-  - verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
-  - verify/verify-yosupo-math/sqrt_mod.test.cpp
   - verify/verify-aoj-ntl/ntl_1_b.test.cpp
+  - verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
+  - verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp
+  - verify/verify-yosupo-polynomial/log_of_formal_power_series.test.cpp
+  - verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
+  - verify/verify-yosupo-polynomial/exp_of_formal_power_series.test.cpp
+  - verify/verify-yosupo-math/sqrt_mod.test.cpp
 documentation_of: math/power.hpp
 layout: document
 title: power

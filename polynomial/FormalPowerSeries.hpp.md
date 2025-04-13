@@ -260,11 +260,11 @@ data:
   timestamp: '2024-07-19 17:55:37+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp
   - verify/verify-yosupo-polynomial/inv_of_formal_power_series.test.cpp
+  - verify/verify-yosupo-polynomial/pow_of_formal_power_series.test.cpp
   - verify/verify-yosupo-polynomial/log_of_formal_power_series.test.cpp
-  - verify/verify-yosupo-polynomial/exp_of_formal_power_series.test.cpp
   - verify/verify-yosupo-polynomial/sqrt_of_formal_power_series.test.cpp
+  - verify/verify-yosupo-polynomial/exp_of_formal_power_series.test.cpp
 documentation_of: polynomial/FormalPowerSeries.hpp
 layout: document
 redirect_from:
